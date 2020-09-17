@@ -77,7 +77,7 @@ nav {
     font-size: 1.13em;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 460px) {
     #portrait {
         float: none;
         margin-left: 10px;
