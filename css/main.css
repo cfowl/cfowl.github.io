@@ -92,6 +92,15 @@ nav {
     }
 
     h1 {
-        padding-left: 150px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #separate {
+        display: none;
+    }
+
+    footer span {
+        display: block;
     }
 }
