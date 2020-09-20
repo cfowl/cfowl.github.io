@@ -83,9 +83,9 @@ nav {
 
 @media screen and (max-width: 560px) {
     #portrait {
-        float: left;
+        float: right;
         margin-left: 10px;
-        margin-top: -57px;
+        margin-bottom: 25px;
     }
 
     body {
@@ -97,6 +97,10 @@ nav {
         font-size: 36pt;
     }
 
+    nav {
+        margin-top: 60px;
+    }
+
     #separate {
         display: none;
     }
@@ -104,4 +108,5 @@ nav {
     footer span {
         display: block;
     }
+
 }
