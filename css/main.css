@@ -83,8 +83,9 @@ nav {
 
 @media screen and (max-width: 560px) {
     #portrait {
-        float: none;
+        float: left;
         margin-left: 10px;
+        margin-top: -57px;
     }
 
     body {
@@ -92,8 +93,8 @@ nav {
     }
 
     h1 {
-        padding-left: 40px;
-        padding-right: 40px;
+        margin-top: 60px;
+        font-size: 36pt;
     }
 
     #separate {
