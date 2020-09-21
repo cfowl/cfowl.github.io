@@ -1,3 +1,6 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Inconsolata:wght@500&family=Open+Sans:wght@600&display=swap');
+
 body {
     max-width: 760px;
     margin: 0 auto;
@@ -27,9 +30,10 @@ h1 {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: sans-serif;
+    font-family: 'Cinzel', serif;
     font-size: 40pt;
     filter: drop-shadow(3px 2px 4px black);
+    
 }
 
 h2 {
@@ -59,6 +63,10 @@ nav {
     padding-left: 60px;
 }
 
+nav h2, nav ul {
+    font-family: 'Open Sans', sans-serif;
+}
+
 #copyright a {
     color: white;
 }
@@ -71,14 +79,10 @@ nav {
     color: #ffd145;
 }
 
-#currentDate,
-#lastUpdated {
-    color: #ffd145;
-}
-
 .dates {
-    font-family: monospace;
-    font-size: 1.13em;
+    font-size: 12pt;
+    font-family: 'Inconsolata', monospace;
+    color: #ffd145;
 }
 
 @media screen and (max-width: 560px) {
@@ -93,8 +97,9 @@ nav {
     }
 
     h1 {
+        margin-left: 8px;
         margin-top: 60px;
-        font-size: 36pt;
+        font-size: 32pt;
     }
 
     nav {
