@@ -1,0 +1,92 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Inknut+Antiqua:wght@800&family=Open+Sans&display=swap');
+
+body {
+    max-width: 860px;
+    margin: 10px auto;
+}
+
+main {
+    margin: .75rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #312e8f;
+    text-align: center;
+    padding: 15px;
+}
+
+h1, h2 {
+    color: #ffd145;
+    font-family: 'Inknut Antiqua', serif;
+    filter: drop-shadow(3px 2px 4px black);
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 2.25rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 { /* column headings */
+    padding: .75rem;
+    margin: 0 -.5rem 0 -.5rem;
+    border-radius: 15px 15px 0 0;
+    background-color: lightgrey;
+    color: #312e8f;
+    font-size: 1.25rem;
+    font-family: sans-serif;
+}
+
+.column1 a, .column2 a, .column3 a {
+    color: #ff7445;
+}
+
+.column1 a:hover, .column2 a:hover, .column3 a:hover {
+    color: #ffd145;
+}
+
+.column1, .column2, .column3 {
+    border: 2px solid black;
+    border-radius: 15px 15px 0 0;
+    margin-top: 1.25rem;
+    padding: 0 .5rem 0 .5rem;
+}
+
+h4 {
+    margin-bottom: .5rem;
+}
+
+.column1 img, .column2 img, .column3 img {
+    margin: 1.5rem auto 1.25rem auto;
+    width: 100%;
+    border: 1px solid black;
+}
+
+footer {
+    background-color: #312e8f;
+    text-align: center;
+    padding: 25px;
+    margin-top: 1.25rem;
+    font-size: 1.1rem;
+    font-family: 'Inconsolata', monospace;
+    color: white;  
+}
+
+nav {
+    margin: 15px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav a {
+    color: #ff7445;
+}
+
+nav a:hover {
+    color: #ffd145
+}
