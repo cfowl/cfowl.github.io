@@ -53,7 +53,7 @@ h3 { /* column headings */
 .column1, .column2, .column3 {
     border: 2px solid black;
     border-radius: 15px 15px 0 0;
-    margin-top: 1.25rem;
+    margin: 1.25rem 1rem auto 1rem;
     padding: 0 .5rem 0 .5rem;
 }
 
