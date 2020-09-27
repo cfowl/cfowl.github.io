@@ -9,4 +9,10 @@
     header, footer {
         border-radius: 15px;
     }
+
+    .column1, .column2, .column3 {
+        margin: 1.25rem 0 auto 0;
+        max-width: 425px;
+        justify-self: center;
+    }
 }
