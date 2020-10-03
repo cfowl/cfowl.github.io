@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Chris Fowler">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Fowler's WDD230 Home Page | BYU-I</title>
+    <meta name="description" content="Chris Fowler's Course Portal Home Page for Web Design and Development I (WDD 230). This is for the Fall 2020 semester at Brigham Young University-Idaho (BYUI).">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="stylesheet" href="../css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Montserrat&family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="#" alt="WeatherFortune.com Site Logo">
+    <h1>Weather Fortune</h1>
+    <h2>Typography</h2>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Site Plan Home</a> </li>
+      <li><a href="target-audience.html">Target Audience</a> </li>
+      <li><a href="color-scheme.html">Color Scheme</a></li>
+      <li><a href="typography.html">Typography</a> </li>
+    </ul>
+  </nav>
+
+  <main>
+      <h2>Typography</h2>
+      <p>There are three fonts I will use on the Weather Fortune site. These fonts are:
+          <ul>
+              <li><em class="bold mont-alt">Montserrat Alternates</em> (medium weight), a Sans-Serif font</li>
+              <li><em class="bold mont">Montserrat</em> (regular weight), a Sans-Serif font</li>
+              <li><em class="bold inco">Inconsolata</em> (medium weight), a Monospace font</li>
+          </ul>
+      </p>
+
+      <h2>How They Apply</h2>
+      <p><em class="bold mont-alt">Montserrat Alternates</em> is used for all heading elements. I chose this font for all site headings because it kind of has a cloudy feel to it that I felt would go well with a the Weather Fortune site.</p>
+      <p><em class="bold inco">Inconsolata</em> is used for the footer element. I used this monospace font to set the footer apart somewhat, and because it has an informational feel to it.</p>
+      <p><em class="bold mont">Montserrat</em> is used for all the other text in the main element. I chose this font for all non-heading elements because it pairs well with Montserrat Alternates, has a simple, clean feel, and is easy to read. In general, sans-serif fonts work very well on the web.</p>
+  </main>
+
+  <footer>
+    <div id="copyright">
+        <span id="currentYear"></span>
+        <span class="separate"> | </span>
+        <span><a href="../../index.html" target="blank">Student Portal</a></span>
+        <span class="separate"> | </span> 
+        <span>Contact Information Goes Here</span>
+    </div>
+    <div>
+        
+    </div>
+    <div class="dates">
+        <span id="currentDate"></span>
+        <span class="separate"> | </span>
+        <span id="lastUpdated"></span>
+    </div>
+  </footer>
+
+  <!-- Inserts today's date and the date the document was last modified -->
+  <script src="../js/dates.js"></script>
+
+</body>
+
+</html>
