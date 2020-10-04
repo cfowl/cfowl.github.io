@@ -50,6 +50,7 @@ nav h2, nav ul {
 footer {
     padding: 20px;
     line-height: 1.5rem;
+    font-family: 'Inconsolata', monospace;
 }
 
 #copyright {
@@ -70,7 +71,6 @@ footer {
 
 .dates {
     font-size: 12pt;
-    font-family: 'Inconsolata', monospace;
     color: #ffd145;
 }
 

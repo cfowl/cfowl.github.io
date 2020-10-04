@@ -6,6 +6,7 @@ body {
 main {
     font-family: 'Montserrat', sans-serif;
     color: #50514f;
+    padding: 15px;
 }
 
 .bold {
@@ -26,17 +27,36 @@ main {
 }
 
 header {
-    background-color: #247ba0;
-    text-align: center;
+    background-color: #50514f;
     padding: 15px;
 }
 
+.main-logo {
+    width: 8em;
+    display: block;
+    margin: auto;
+}
+
+.logo {
+    width: 8em;
+}
+
+img.persona {
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+ul.audience {
+    margin-bottom: 40px;
+}
+
 header h1, header h2 {
-    color: #ffe066;
+    color: #fff914;
+    text-align: center;
     filter: drop-shadow(3px 2px 4px black);
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
     color: #f25f5c;
     font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -50,35 +70,56 @@ h2 {
     font-size: 1.75rem;
 }
 
+h3, h4 {
+    margin-bottom: -8px;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
 nav {
     margin: 15px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+    background-color: #247ba0;
+    text-align: center;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
 nav ul li a {
-    background-color: #ffe066;
-    color: #247ba0;
+    display: block;
+    color: #ffc600;
     font-family: 'Montserrat', sans-serif;
+    font-size: .9em;
+	padding: 0.75rem;
+    text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #247ba0;
-    color: #ffe066;
+    background-color: #ffc600;
+    color: #247ba0;
+}
+
+.active, .active:hover {
+	color: white;
 }
 
 footer {
-    background-color: #247ba0;
+    background-color: #50514f;
     text-align: center;
     padding: 25px;
     margin-top: 1.25rem;
     font-size: 1.1rem;
     font-family: 'Inconsolata', monospace;
-    color: white;  
+    color: white;
+    line-height: 1.5rem;
 }
 
 #copyright a {
@@ -95,7 +136,7 @@ footer {
 
 .dates {
     font-size: 12pt;
-    color: #ffe066;
+    color: #ffc600;
 }
 
 footer span {
