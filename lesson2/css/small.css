@@ -39,11 +39,11 @@ h3 { /* column headings */
 }
 
 .column1 a, .column2 a, .column3 a {
-    color: #ff7445;
+    color: #312e8f;
 }
 
 .column1 a:hover, .column2 a:hover, .column3 a:hover {
-    color: #ffd145;
+    color: #ff7445;
 }
 
 .column1, .column2, .column3 {
@@ -73,16 +73,10 @@ footer {
     color: white;  
 }
 
-nav {
-    margin: 15px;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
+footer a {
+    color: white;
 }
 
-nav a {
-    color: #ff7445;
-}
-
-nav a:hover {
-    color: #ffd145;
+footer a:hover {
+    color: lightgrey;
 }
