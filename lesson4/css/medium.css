@@ -1,0 +1,31 @@
+@media only screen and (min-width: 37.5em) {
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+        font-size: 1em;
+        padding: 1em;
+    }
+    
+    .navigation li:first-child {
+        display: none;
+    }
+    
+    footer span {
+        display: initial;
+    }
+    
+    .separate {
+        display: initial;
+    }
+
+}
