@@ -20,6 +20,10 @@ header {
     margin: auto;
 }
 
+.motto {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .logo {
     width: 8em;
 }
@@ -67,17 +71,19 @@ nav {
     display: block;
 }
 
-.navigation a {
+.navigation li a {
     display: block;
     color: #FFF700;
     font-family: 'Montserrat', sans-serif;
-	padding: 0.75em;
+	padding: 0.9em;
     text-decoration: none;
+    border: 1px solid rgba(0,0,0,.25);
 }
 
 .navigation a:hover {
     background-color: #FFF700;
     color: #195671;
+    font-weight: bold;
 }
 
 .navigation .active {
@@ -109,8 +115,6 @@ footer {
     font-family: 'Inconsolata', monospace;
     color: white;
     line-height: 1.5rem;
-    max-width: 85%;
-    margin: 0 auto;
 }
 
 #copyright a {

@@ -1,3 +1,27 @@
-@media only screen and (min-width: 65em) {
-    /* */    
+@media only screen and (min-width: 64em) {
+
+    .main-logo {
+        width: 12em;
+    }
+    
+    header {
+        border-radius: 15px 15px 0 0;
+    }
+
+    nav {
+        border-radius: 0 0 15px 15px;
+        overflow: hidden;
+    }
+
+    header h1 {
+        font-size: 3.2em;
+    }
+
+    .motto {
+        font-size: 1.3em;
+    }
+
+    footer {
+        border-radius: 15px;
+    }
 }
