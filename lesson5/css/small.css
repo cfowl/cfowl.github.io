@@ -146,6 +146,26 @@ h2 {
     display: none;
 }
 
+article {
+    border: 1px dashed black;
+    background-color: #50514f;
+    color: white;
+    line-height: 1.25em;
+    padding: 2.5em;
+}
+
+.article-img {
+    max-width: 100%;
+    margin-bottom: .5em;
+    box-shadow: 0 0 10px white;
+}
+
+.article-title {
+    margin: 0;
+    line-height: 1.5em;
+    color: #FFF700;
+}
+
 footer {
     background-color: #50514f;
     text-align: center;
