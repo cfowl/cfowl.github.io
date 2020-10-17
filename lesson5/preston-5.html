@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>  <!-- CHANGE STUFF HERE STILL!! -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Chris Fowler">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Idaho Weather | Chris Fowler's Weather Fortune Site | BYU-I</title>
+    <meta name="description" content="Preston Idaho page for Chris Fowler's Weather Fortune site; for Web Design and Development I (WDD 230). This is for the Fall 2020 semester at Brigham Young University-Idaho (BYUI).">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Montserrat&family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+
+  <aside id="announcment">Saturday = Preston Pancakes in the Park!
+    <br>9:00 a.m. Saturday at the city park pavilion.</aside>
+
+  <header>
+    <img class="main-logo" src="images/logo.png" alt="WeatherFortune.com Site Logo">
+    <div class="title-motto">
+      <h1>Weather Fortune</h1>
+      <div class="motto">~ The Future of Your Weather ~</div>  <!-- Change Font -->
+    </div>
+  </header>
+
+  <nav>
+    <ul class="navigation">
+      <li><a id="menu-button" href="#" onclick="toggleMenu()">Menu</a></li>
+      <li><a href="#">Home</a> </li>
+      <li><a class="active" href="#">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>  
+
+  <main>
+
+    <h2>Preston Idaho</h2>
+
+    <div class="hero-div">
+      <img class="hero-img" src="images/hero.jpg" alt="Banner Image of Mountain Range and Valley">
+
+      <section class="weather-summary">
+        <h3 class="summary-title">Weather Summary</h3>
+        <div class="names">
+          Currently:</br>
+          High:</br>
+          Wind Chill:</br>
+          Humidity:</br>
+          Wind Speed:</br>
+        </div>
+
+        <div class="values">
+          Sunny</br>
+          76&deg; F</br>
+          &deg;</br>
+          76%</br>
+          5 mph</br>
+        </div>
+      </section>
+    </div>
+
+    <div class="forecast-div">
+      <div class="tuesday">
+        <h4>Tue</h4>
+        <section>
+          <img class="forecast-icon" src="images/sunny.webp" alt="FORECAST ICON">     <!-- CHANGE ALT AND SRC -->
+          89&deg; F
+        </section>
+      </div>
+
+      <div class="wednesday">
+        <h4>Wed</h4>
+        <section>
+          <img class="forecast-icon" src="images/sunny.webp" alt="FORECAST ICON">     <!-- CHANGE ALT AND SRC -->
+          87&deg; F
+        </section>
+      </div>
+
+      <div class="thursday">
+        <h4>Thur</h4>
+        <section>
+          <img class="forecast-icon" src="images/partly.webp" alt="FORECAST ICON">     <!-- CHANGE ALT AND SRC -->
+          78&deg; F
+        </section>
+      </div>
+
+      <div class="friday">
+        <h4>Fri</h4>
+        <section>
+          <img class="forecast-icon" src="images/sunny.webp" alt="FORECAST ICON">     <!-- CHANGE ALT AND SRC -->
+          75&deg; F
+        </section>
+      </div>
+
+      <div class="saturday">
+        <h4>Sat</h4>
+        <section>
+          <img class="forecast-icon" src="images/cloudy.webp" alt="FORECAST ICON">     <!-- CHANGE ALT AND SRC -->
+          72&deg; F
+        </section>
+      </div>
+    </div>
+
+    <div class="holder">Article</div>
+    <div class="holder">Contact Info</div>
+
+  </main>
+
+  <footer>
+
+    <div id="copyright">
+      <span id="currentYear"></span>
+      <span class="separate"> | </span>
+      <span><a href="../index.html" target="blank">Chris Fowler</a></span>
+    </div>
+
+    <div class="dates">
+      <span id="currentDate"></span>
+    </div>
+
+  </footer>
+
+  <!-- Inserts today's date and the date the document was last modified -->
+  <script src="js/dates.js"></script>
+  <script src="js/responsive-menu.js"></script>
+
+</body>
+
+</html>

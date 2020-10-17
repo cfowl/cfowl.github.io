@@ -1,0 +1,24 @@
+@media only screen and (min-width: 64em) {
+
+    .main-logo {
+        width: 12em;
+    }
+
+    header h1 {
+        font-size: 3.2em;
+    }
+
+    .motto {
+        font-size: 1.3em;
+    }
+
+    .navigation a {
+        font-size: 1em;
+    }
+
+    footer {
+        border-radius: 15px;
+        max-width: 960px;
+        margin: 10px auto;
+    }
+}
