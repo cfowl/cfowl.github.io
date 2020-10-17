@@ -152,6 +152,7 @@ article {
     color: white;
     line-height: 1.25em;
     padding: 2.5em;
+    margin: 1.5em auto;
 }
 
 .article-img {
@@ -166,11 +167,32 @@ article {
     color: #FFF700;
 }
 
+.contact-div {
+    padding: 2.5em;
+    background-color: #195671;
+}
+.contact-map{
+    display: none;
+}
+
+.contact-info {
+    line-height: 3em;
+    color: #FFF700;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+}
+
+.social-icon {
+    text-align: center;
+    margin: 1em;
+}
+
 footer {
     background-color: #50514f;
     text-align: center;
     padding: 25px;
-    margin-top: 1.25rem;
+    margin: 1em auto;
     font-size: 1.1rem;
     font-family: 'Inconsolata', monospace;
     color: white;

@@ -64,7 +64,7 @@
         grid-gap: 2%;
         padding: 0;
         width: 80%;
-        margin: 1.5em auto;
+        margin: 2.5em auto;
         text-align: center;
     }
 
@@ -105,6 +105,24 @@
         width: 45%;
         margin: 0 0 .5em 1em;
         border-radius: 5px;
+    }
+
+    .contact-div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-map{
+        display: block;
+        width: 38%;
+        height: 38%;
+        margin-right: 20px;
+    }
+    
+    .contact-info {
+        margin: auto;
+        text-align: left;
+        font-weight: initial;
     }
     
     footer span {
