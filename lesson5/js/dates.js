@@ -15,7 +15,7 @@ document.getElementById("currentYear").innerHTML = "&copy; " + new Date().getFul
 day = new Date().getDay();
 let announcement = document.getElementById("announcment");
 
-if (day == 5) {
+if (day == 6) {
     announcement.style.display = "block";
 }
 else {
