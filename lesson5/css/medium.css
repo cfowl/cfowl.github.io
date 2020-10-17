@@ -46,13 +46,32 @@
         display: none;
     }
 
+    .weather-summary {
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        grid-template-columns: 3fr 2fr;
+        border-radius: 5px;
+    }
+
+    .names, .values, .summary-title {
+        filter: drop-shadow(1px 1px 1px white);
+    }
+
     .forecast-div {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-gap: 2px;
+        grid-gap: 1em;
         padding: 0;
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
+        text-align: center;
+    }
+
+    .forecast-title {
+        grid-column: 1/6;
+        text-align: center;
+        margin: 1em 0 0 0;
     }
 
     .forecast-div img {
@@ -76,7 +95,8 @@
     }
 
     .forecast-div > div {
-        border: 1px solid white;
+        border: 1px solid black;
+        box-shadow: 0 0 10px black;
     }
     
     footer span {

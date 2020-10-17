@@ -1,7 +1,6 @@
 main {
     font-family: 'Montserrat', sans-serif;
     color: #50514f;
-    padding: 15px;
     max-width: 960px;
     margin: 10px auto;
 }
@@ -105,6 +104,7 @@ h2 {
 
 .hero-div {
     position: relative;
+    margin-bottom: 1.5em;
 }
 
 .hero-img {
@@ -114,13 +114,10 @@ h2 {
 }
 
 .weather-summary {
-    border: 1px dashed black;
-    position: absolute;
-    top: 30px;
-    left: 40px;
-    background-color: rgba(200,200,200,.45);
+    background-color: rgba(200,200,200,.8);
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .75em;
     color: #AF110E;
     font-weight: bold;
     box-shadow: 0 0 10px black;
@@ -132,31 +129,21 @@ h2 {
     justify-self: center;
     text-align: center;
     margin: 0;
-    padding-bottom: 5px;
+    padding-bottom: .2em;
     width: 90%;
     border-bottom: 2px solid #AF110E;
 }
 
 .names {
     text-align: right;
-    margin-right: 10px;
-    filter: drop-shadow(1px 1px 1px white);
 }
 
 .values {
     text-align: left;
-    filter: drop-shadow(1px 1px 1px white);
 }
 
 .forecast-div {
     display: none;
-}
-
-main > div {
-    border: 1px dashed black;
-    padding: 1em;
-    margin: 1em;
-    text-align: center;
 }
 
 footer {
