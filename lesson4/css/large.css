@@ -3,15 +3,6 @@
     .main-logo {
         width: 12em;
     }
-    
-    header {
-        border-radius: 15px 15px 0 0;
-    }
-
-    nav {
-        border-radius: 0 0 15px 15px;
-        overflow: hidden;
-    }
 
     header h1 {
         font-size: 3.2em;
@@ -21,7 +12,13 @@
         font-size: 1.3em;
     }
 
+    .navigation a {
+        font-size: 1em;
+    }
+
     footer {
         border-radius: 15px;
+        max-width: 960px;
+        margin: 10px auto;
     }
 }
