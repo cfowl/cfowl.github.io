@@ -1,0 +1,140 @@
+@media only screen and (min-width: 35em) {
+
+    main {
+        max-width: 1280px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .main-logo {
+        margin: 1em;
+        width: 9em;
+        justify-self: end;
+        align-self: center;
+    }
+
+    .title-motto {
+        justify-self: start;
+        align-self: center;
+        margin-left: 1em;
+    }
+
+    header h1 {
+        font-size: 2.9em;
+    }
+
+    .motto {
+        font-size: 1.1em;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+        font-size: .825em;
+        padding: 1em;
+    }
+    
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .weather-summary {
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        grid-template-columns: 3fr 2fr;
+        border-radius: 5px;
+    }
+
+    .names, .values, .summary-title {
+        filter: drop-shadow(1px 1px 1px white);
+    }
+
+    .forecast-div {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 2%;
+        padding: 0;
+        width: 80%;
+        margin: 2.5em auto;
+        text-align: center;
+    }
+
+    .forecast-title {
+        grid-column: 1/6;
+        text-align: center;
+        margin: 1em 0 .6em 0;
+    }
+
+    .forecast-div img {
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+
+    .forecast-div h4 {
+        background-color: #AF110E;
+        color: #FFF700;
+        margin: 0;
+        padding: .5em;
+    }
+
+    .forecast-div section {
+        background-color: #195671;
+        color: #FFF700;
+        padding: .25em 0 .75em 0;
+        font-weight: 600;
+    }
+
+    .forecast-div > div {
+        box-shadow: 0 0 10px black;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .article-img {
+        float: right;
+        width: 45%;
+        margin: 0 0 .5em 1em;
+        border-radius: 5px;
+    }
+
+    .contact-div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-map{
+        display: block;
+        width: 38%;
+        height: 38%;
+        margin-right: 20px;
+    }
+    
+    .contact-info {
+        margin: auto;
+        text-align: left;
+        font-weight: initial;
+    }
+    
+    footer span {
+        display: initial;
+    }
+    
+    .separate {
+        display: initial;
+    }
+
+}
