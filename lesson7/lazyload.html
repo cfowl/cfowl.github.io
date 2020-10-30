@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Chris Fowler">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progressive Image Loading | Chris Fowler | WDD230 BYU-I</title>
+  <meta name="description" content="Progressive Image Loading demonstration; Chris Fowler. For Web Design and Development I (WDD 230). This is for the Fall 2020 semester at Brigham Young University-Idaho (BYUI).">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+</head>
+
+<body>
+    <h1>Lazy Load Images Demonstration</h1>
+
+    <picture>
+        <img src="images/placeholder.jpg" data-src="images/liberty.jpg" alt ="Statue of Liberty">
+    </picture>
+
+    <picture>
+        <img src="images/placeholder.jpg" data-src="images/legos.jpg" alt ="Lego Heads">
+    </picture>
+
+    <picture>
+        <img src="images/placeholder.jpg" data-src="images/praying.jpg" alt ="Two Hands Praying">
+    </picture>
+
+    <picture>
+        <img src="images/placeholder.jpg" data-src="images/motorcycle.jpg" alt="Motorcycle">
+    </picture>
+
+    <picture>
+        <img src="images/placeholder.jpg" data-src="images/luck.jpg" alt ="Four Leaf Clovers">
+    </picture>
+
+    <picture>
+        <img src="images/placeholder.jpg" data-src="images/typewriter.jpg" alt ="Old Typewriter">
+    </picture>
+
+    <footer>
+        <span>&copy;2020 | </span>
+        <a href="../index.html" target="blank">Chris Fowler</a>
+    </footer>
+
+    <script src="js/lazyload.js" defer></script>
+
+</body>
+
+</html>
