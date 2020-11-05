@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Chris Fowler">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Build Demo | Chris Fowler's Weather Fortune Site | BYU-I</title>
+    <meta name="description" content="Chris Fowler's HTML Table Build Demo; for Web Design and Development I (WDD 230). This is for the Fall 2020 semester at Brigham Young University-Idaho (BYUI).">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/tablesmall.css">
+</head>
+
+<body> 
+
+  <main>
+      <h1>Table Build Demo</h1>
+      
+      <table>
+          <thead>
+              <tr>
+                  <th id="caption" colspan="3">ACME Wildwest</th>
+              </tr>
+              <tr>
+                  <th>Period</th>
+                  <th>Sales</th>
+                  <th>Sales Goal</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>August</td>
+                  <td>$3,590</td>
+                  <td>$4,000</td>
+              </tr>
+              
+              <tr>
+                  <td>September</td>
+                  <td>$4,420</td>
+                  <td>$5,000</td>
+              </tr>
+
+              <tr>
+                  <td>October</td>
+                  <td>$4,870</td>
+                  <td>$5,000</td>
+              </tr>
+
+              <tr>
+                  <td>November</td>
+                  <td>$8,610</td>
+                  <td id="nov-goal">$7,500</td>
+              </tr>
+
+              <tr>
+                  <td>Black Friday</td>
+                  <td colspan="2">$3,200</td>
+              </tr>
+
+              <tr>
+                  <td>December</td>
+                  <td>$6,820</td>
+                  <td>$7,500</td>
+              </tr>
+          </tbody>
+          <tfoot>
+              <td colspan="3">Compiled 11.04.2020 by cFowler</td>
+          </tfoot>
+      </table>
+  </main>
+
+  <footer>
+
+    <div id="copyright">
+      <span id="currentYear"></span>
+      <span class="separate"> | </span>
+      <span><a href="../index.html">Chris Fowler</a></span>
+    </div>
+
+    <div class="dates">
+      <span id="currentDate"></span>
+    </div>
+
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/webfontload.js"></script>
+  <script src="js/responsive-menu.js"></script>
+  <script src="js/lazyload.js"></script>
+  <script src="js/dates.js"></script>
+
+</body>
+
+</html>             <!-- CHANGE THINGS !!!! -->

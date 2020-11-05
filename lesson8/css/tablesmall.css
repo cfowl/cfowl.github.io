@@ -1,0 +1,98 @@
+main {
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 1080px;
+    margin: 10px auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #628ca6;
+    text-shadow: 2px 2px 2px darkgray;
+}
+
+table {
+    margin: 6em auto;
+    text-align: center;
+    box-shadow: 10px 10px 10px #628ca6;
+}
+
+#caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #7fb9c2;
+    color: black;
+    padding: .35em;
+}
+
+th {
+    background-color: #628ca6;
+    color: white;
+}
+
+tr {
+    background-color: #e7f0ed;
+}
+
+tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+
+tbody tr:nth-child(4) td:nth-child(3) {
+    background-color: #628ca6;
+    color: white;
+}
+
+tbody tr:nth-child(5) td:first-child {
+    font-style: italic;
+}
+
+tfoot td {
+    font-size: .75em;
+    font-weight: bold;
+    background-color: #7fb9c2;
+}
+
+table, th, tr, td {
+    border: 2px solid silver;
+    border-collapse: collapse;
+    padding: .5em;
+}
+
+footer {
+    width: 60%;
+    border-radius: 20px;
+    background-color: #50514f;
+    text-align: center;
+    padding: 25px 0;
+    margin: 1em auto;
+    font-size: 1.1rem;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    line-height: 1.5rem;
+}
+
+#copyright a {
+    color: white;
+}
+
+#copyright a:hover {
+    color: lightgrey;
+}
+
+#copyright a:active {
+    color: #FFF700;
+}
+
+.dates {
+    font-size: 1em;
+    color: #FFF700;
+}
+
+footer span {
+    display: block;
+}
+
+.separate {
+    display: none;
+}
