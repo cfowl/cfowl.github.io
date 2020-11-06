@@ -12,9 +12,10 @@ h1 {
 }
 
 table {
-    margin: 6em auto;
+    margin: 3em auto 6em auto;
     text-align: center;
     box-shadow: 10px 10px 10px #628ca6;
+    font-size: 1.1em;
 }
 
 #caption {
@@ -49,7 +50,6 @@ tbody tr:nth-child(5) td:first-child {
 
 tfoot td {
     font-size: .75em;
-    font-weight: bold;
     background-color: #7fb9c2;
 }
 
@@ -60,6 +60,7 @@ table, th, tr, td {
 }
 
 footer {
+    width: 99%;
     border-radius: 20px;
     background-color: #50514f;
     text-align: center;
