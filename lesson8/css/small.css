@@ -1,0 +1,236 @@
+main {
+    font-family: 'Montserrat', sans-serif;
+    color: #50514f;
+    max-width: 1080px;
+    margin: 10px auto;
+}
+
+#announcment {
+    padding: .75em;
+    text-align: center;
+    color: #FFF700;
+    background-color: #AF110E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #50514f;
+    padding: 15px;
+}
+
+.main-logo {
+    width: 8em;
+    display: block;
+    margin: auto;
+}
+
+.motto {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+.logo {
+    width: 8em;
+}
+
+header h1, header div {
+    color: #FFF700;
+    text-align: center;
+    filter: drop-shadow(3px 2px 4px black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #AF110E;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+}
+
+h2 {
+    margin: 50px 0 0 0;
+    text-align: center;
+    font-size: 2.1em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 4em 0 2em 3%;
+}
+
+
+/* ------------ NAVIGATION ------------ */
+nav {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #195671;
+    text-align: center;
+}
+
+.navigation {
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+.navigation li a {
+    display: block;
+    color: #FFF700;
+    font-family: 'Montserrat', sans-serif;
+	padding: 0.9em;
+    text-decoration: none;
+    border: 1px solid rgba(0,0,0,.25);
+}
+
+.navigation a:hover {
+    background-color: #FFF700;
+    color: #195671;
+    font-weight: bold;
+}
+
+.navigation .active {
+    color: #195671;
+    text-decoration: underline;
+    background-color: #FFF700;
+    font-weight: bold;
+}
+
+
+/* ------------ THANKS ------------ */
+h3.thanks {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+p.thanks {
+    text-align: center;
+    margin-bottom: 8em;
+}
+
+
+/* ------------ FORM ------------ */
+form {
+    max-width: 60em;
+    margin: 0 auto;
+}
+form fieldset {
+    margin: 2em 0;
+    border: 2px solid #50514f;
+    border-radius: 7px;
+    padding: .5em 2%;
+}
+
+form legend {
+    color: #50514f;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1em;
+    color: #195671;
+    font-size: .9em;
+}
+
+form label.top input, form label.top select, form textarea {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #50514f;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #50514f;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,.05);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submit {
+    border: none;
+    background-color: #AF110E;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+#storm-index {
+    margin-left: 5px;
+    color: #AF110E;
+    font-weight: bold;
+}
+
+form textarea.comments {
+    height: 100px;
+}
+
+
+/* ------------ FOOTER ------------ */
+footer {
+    background-color: #50514f;
+    text-align: center;
+    padding: 25px;
+    margin: 1em auto;
+    font-size: 1.1rem;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    line-height: 1.5rem;
+}
+
+#copyright a {
+    color: white;
+}
+
+#copyright a:hover {
+    color: lightgrey;
+}
+
+#copyright a:active {
+    color: #FFF700;
+}
+
+.dates {
+    font-size: 1em;
+    color: #FFF700;
+}
+
+footer span {
+    display: block;
+}
+
+.separate {
+    display: none;
+}
