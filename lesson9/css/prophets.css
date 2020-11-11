@@ -3,11 +3,19 @@ main {
     margin: 0 auto;
 }
 
+main, footer {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
 header, footer {
     max-width: 96%;
     margin: 0 auto;
     text-align: center;
     border: 4px solid #02182B;
+}
+
+h1, h2 {
+    font-family: 'Special Elite', cursive;
 }
 
 header {
@@ -21,7 +29,7 @@ header {
 footer {
     color: #02182B;
     background-color: #68C5DB;
-    font-size: 1.2em;
+    font-size: 1.4em;
     padding: 1em;
     margin-top: 2%;
 }
@@ -50,10 +58,12 @@ div.cards p, div.cards h2 {
 }
 
 div.cards h2 {
+    font-size: 1.55em;
     color: #0197F6;
 }
 
 div.cards p {
+    font-size: 1.05em;
     color: white;
     margin: 0 0 1% 0;
 }
