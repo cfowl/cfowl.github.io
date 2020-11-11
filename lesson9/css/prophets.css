@@ -7,18 +7,19 @@ header, footer {
     max-width: 96%;
     margin: 0 auto;
     text-align: center;
-    color: #D7263D;
     border: 4px solid #02182B;
 }
 
 header {
-    background-color: #0197F6;
+    color: white;
+    background-color: #A91E30;
     font-size: 1.4em;
     margin-bottom: 2%;
     padding: .2em;
 }
 
 footer {
+    color: #02182B;
     background-color: #68C5DB;
     font-size: 1.2em;
     padding: 1em;
@@ -26,11 +27,11 @@ footer {
 }
 
 footer a {
-    color: #D7263D;
+    color: #02182B;
 }
 
 footer a:hover {
-    color: #02182B;
+    color: white;
 }
 
 div.cards {
@@ -53,7 +54,7 @@ div.cards h2 {
 }
 
 div.cards p {
-    color: #D7263D;
+    color: white;
     margin: 0 0 1% 0;
 }
 
