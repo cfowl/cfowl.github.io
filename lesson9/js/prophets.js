@@ -20,7 +20,8 @@ fetch(requestURL)
           h2.textContent = prophets[i].name + " " + prophets[i].lastname;
           birthDate.textContent = "Date of birth: " + prophets[i].birthdate;
           birthPlace.textContent = "Place of birth: " + prophets[i].birthplace;
-          portrait.setAttribute("src", prophets[i].imageurl);
+          portrait.setAttribute("src", "images/placeholder.jpg");
+          portrait.setAttribute("data-src", prophets[i].imageurl);
           portrait.setAttribute("alt", portraitAlt);
           
           card.appendChild(h2);
@@ -31,4 +32,9 @@ fetch(requestURL)
           document.querySelector("div.cards").appendChild(card);
 
       }
-  })
+      // lazy load images // Thanks Timothy Johnson for the help with this code!
+      let script = document.createElement('script');
+      script.src = "js/lazyload.js";
+      document.querySelector('head').appendChild(script);
+
+  }); // end of fetch
