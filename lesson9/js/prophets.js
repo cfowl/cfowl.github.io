@@ -20,7 +20,7 @@ fetch(requestURL)
           h2.textContent = prophets[i].name + " " + prophets[i].lastname;
           birthDate.textContent = "Date of birth: " + prophets[i].birthdate;
           birthPlace.textContent = "Place of birth: " + prophets[i].birthplace;
-          portrait.setAttribute("src", "images/placeholder.jpg");
+          portrait.setAttribute("src", "https://via.placeholder.com/335x447");
           portrait.setAttribute("data-src", prophets[i].imageurl);
           portrait.setAttribute("alt", portraitAlt);
           
