@@ -1,6 +1,11 @@
 // get all images with data-src from html
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 
+const imgOptions = {
+  threshold: 1,
+  rootMargin: "0px 0px 100px 0px"
+};
+
 // function that loads an images, sets src to data-src, after loading removes data-src
 const loadImages = (image) => {
   image.setAttribute('src', image.getAttribute('data-src'));
@@ -18,7 +23,7 @@ if('IntersectionObserver' in window) {  // if IntersectionObserver is suported
           imageObserver.unobserve(item.target);
         }
       });
-    });
+    }, imgOptions );
 
     // loops through list of all images with data-src and observes them
     imagesToLoad.forEach((img) => {
