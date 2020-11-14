@@ -2,8 +2,8 @@ WebFont.load({
     google: {
       families: [
         'Inconsolata:wght@500',
-        'Inknut+Antiqua:wght@800',
-        'Open+Sans'
+        'Montserrat+Alternates:wght@500',
+        'Montserrat'
       ]
     }
   });

@@ -1,0 +1,50 @@
+@media only screen and (min-width: 61em) {
+
+    .main-logo {
+        width: 12em;
+    }
+
+    header h1 {
+        font-size: 3.2em;
+    }
+
+    .motto {
+        font-size: 1.3em;
+    }
+
+    .navigation a {
+        font-size: 1em;
+    }
+
+
+    /* TOWN DATA STYLING */
+    div.town-info {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    div.town-info section:first-child {
+        justify-self: end;
+    }
+
+    div.town-info section:last-child {
+        justify-self: start;
+    }
+
+    div.town-info section {
+        display: initial;
+        max-width: 300px;
+        margin: 0;
+        justify-self: center;
+    }
+
+    div.town-info section p.town-motto {
+        font-size: .8em;
+    }
+
+    footer {
+        border-radius: 15px;
+        max-width: 960px;
+    }
+}
