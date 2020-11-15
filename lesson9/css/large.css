@@ -16,6 +16,20 @@
         font-size: 1em;
     }
 
+    h2 {
+        margin-bottom: 1.5em;
+    }
+
+    div.hero-div img.hero-img {
+        box-shadow: 0 0 20px 5px gray;
+        border-radius: 2em;
+    }
+
+    div.hero-div img.hero-img:hover {
+        box-shadow: none;
+        border-radius: 0;
+    }
+
 
     /* TOWN DATA STYLING */
     div.town-info {
@@ -43,14 +57,19 @@
         font-size: .8em;
     }
 
-    .clearfix::after {
-        content: "";
-        display: table;
-        clear: both;
+    div.town-info section img.town-img {
+        box-shadow: none;
     }
+    /* END OF TOWN INFO STYLING */
 
     footer {
         border-radius: 15px;
         max-width: 960px;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
     }
 }
