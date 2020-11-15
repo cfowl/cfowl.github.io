@@ -127,6 +127,7 @@ div.town-info section h3 {
 
 div.town-info section img.town-img {
     margin: 0 0 1em 0;
+    box-shadow: 0 0 5px 3px #195671;
 }
 
 div.town-info section p {

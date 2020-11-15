@@ -85,6 +85,10 @@
         align-self: center;
     }
 
+    div.town-info section img.town-img {
+        margin: 0;
+    }
+
     div.town-info section h3 {
         align-self: end;
         margin: 0;
