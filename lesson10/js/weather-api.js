@@ -41,11 +41,11 @@ fetch(forecastURL)
       let num = 1;
       forecast.forEach(i => {
         // gets day name and plugs it into html
-        // dayOfWeek = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"]
-        // const n = new Date(i.dt_txt).getDay();
-        const dayOfWeek = new Date(i.dt_txt).toString().substr(0,3);
+        // dayOfWeek = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"] // other method
+        // const n = new Date(i.dt_txt).getDay();                          // other method
+        const dayOfWeek = new Date(i.dt_txt).toString().substr(0,3);  // might not work on Safari??
         const day = document.getElementById(`day${num++}`);
-        day.getElementsByTagName("h4")[0].textContent = dayOfWeek;
+        day.getElementsByTagName("h4")[0].textContent = dayOfWeek;         // add [n] for other method
 
         // gets icon and plugs it into html
         const icon = day.getElementsByTagName("img")[0];
