@@ -1,5 +1,5 @@
 // city ID for preston is 5604473
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=8cc890828b10d4b67c888df88fd63a40";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=8cc890828b10d4b67c888df88fd63a40";
 
 fetch(apiURL)
   .then(response => response.json())
