@@ -45,7 +45,7 @@ fetch(forecastURL)
           // this didn't work on iPhone Safari - displayed "Inv", but it did work on Chrome and Firefox
 
           // gets day name and plugs it into html
-          dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+          dayOfWeek = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"]
           const n = new Date(i.dt_txt).getDay();
           const day = document.getElementById(`day${num++}`);
           day.getElementsByTagName("h4")[0].textContent = dayOfWeek[n];
