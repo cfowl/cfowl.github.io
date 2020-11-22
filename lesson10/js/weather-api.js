@@ -40,23 +40,20 @@ fetch(forecastURL)
 
       let num = 1;
       forecast.forEach(i => {
+        // gets day name and plugs it into html
+        // dayOfWeek = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"]
+        // const n = new Date(i.dt_txt).getDay();
+        const dayOfWeek = new Date(i.dt_txt).toString().substr(0,3);
+        const day = document.getElementById(`day${num++}`);
+        day.getElementsByTagName("h4")[0].textContent = dayOfWeek;
 
-          // const dayOfWeek = new Date(i.dt_txt).toString().substr(0,3);
-          // this didn't work on iPhone Safari - displayed "Inv", but it did work on Chrome and Firefox
+        // gets icon and plugs it into html
+        const icon = day.getElementsByTagName("img")[0];
+        const iconSrc = `https://openweathermap.org/img/w/${i.weather[0].icon}.png`;
+        icon.setAttribute("src", iconSrc);
 
-          // gets day name and plugs it into html
-          dayOfWeek = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"]
-          const n = new Date(i.dt_txt).getDay();
-          const day = document.getElementById(`day${num++}`);
-          day.getElementsByTagName("h4")[0].textContent = dayOfWeek[n];
-
-          // gets icon and plugs it into html
-          const icon = day.getElementsByTagName("img")[0];
-          const iconSrc = `https://openweathermap.org/img/w/${i.weather[0].icon}.png`;
-          icon.setAttribute("src", iconSrc);
-
-          // gets temp at 18:00:00 and plugs it into html
-          day.getElementsByTagName("span")[0].innerHTML = `${i.main.temp.toFixed(1)}&deg; F`;
+        // gets temp at 18:00:00 and plugs it into html
+        day.getElementsByTagName("span")[0].innerHTML = `${i.main.temp.toFixed(1)}&deg; F`;
 
       })
 
