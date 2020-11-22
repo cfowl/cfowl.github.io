@@ -1,0 +1,30 @@
+@media only screen and (min-width: 64em) {
+
+    .main-logo {
+        width: 12em;
+    }
+
+    header h1 {
+        font-size: 3.2em;
+    }
+
+    .motto {
+        font-size: 1.3em;
+    }
+
+    .navigation a {
+        font-size: 1em;
+    }
+
+    .forecast-div {
+        width: 80%;
+    }
+
+    .forecast-div .day {
+        width: 90%;
+    }
+
+    footer {
+        border-radius: 0 0 15px 15px;
+    }
+}
