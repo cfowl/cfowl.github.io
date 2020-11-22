@@ -95,14 +95,14 @@
         padding: .5em;
     }
 
-    .forecast-div section {
+    .forecast-div div {
         background-color: #195671;
         color: #FFF700;
         padding: .25em 0 .75em 0;
         font-weight: 600;
     }
 
-    .forecast-div > div {
+    .forecast-div section {
         box-shadow: 0 0 10px black;
         border-radius: 5px;
         overflow: hidden;
