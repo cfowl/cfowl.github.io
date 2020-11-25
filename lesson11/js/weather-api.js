@@ -1,8 +1,24 @@
-// ** CURRENT WEATHER DATA ** //
-// city ID for preston is 5604473
+// city ID for Preston is 5604473
+// city ID for Soda Springs is 5607916
+// city Lat/Lon for Fish Haven is 42.0380399, -111.4048681
+const preston = "id=5604473";
+const soda = "id=5607916";
+const fish = "lat=42.0380399&lon=-111.4048681";
+const cityH2 = document.getElementById("city-id").textContent;
+let city = ""
+// determines which town page is making the API call
+if (cityH2.includes("Preston")) {
+  city = preston;
+}
+else if (cityH2.includes("Soda Springs")) {
+  city = soda;
+}
+else {
+  city = fish;
+}
 
-const preston = "5604473";
-const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${preston}&units=imperial&appid=8cc890828b10d4b67c888df88fd63a40`;
+// ** CURRENT WEATHER DATA ** //
+const apiURL = `https://api.openweathermap.org/data/2.5/weather?${city}&units=imperial&appid=8cc890828b10d4b67c888df88fd63a40`;
 
 fetch(apiURL)
   .then(response => response.json())
@@ -29,8 +45,7 @@ fetch(apiURL)
   });
 
 // ** 5-DAY FORECAST DATA ** //
-// city ID for preston is 5604473
-const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=${preston}&units=imperial&appid=8cc890828b10d4b67c888df88fd63a40`;
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?${city}&units=imperial&appid=8cc890828b10d4b67c888df88fd63a40`;
 
 fetch(forecastURL)
   .then(response => response.json())
