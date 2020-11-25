@@ -1,0 +1,140 @@
+@media only screen and (min-width: 41em) {
+
+    main {
+        max-width: 1280px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .main-logo {
+        margin: 1em;
+        width: 9em;
+        justify-self: end;
+        align-self: center;
+    }
+
+    .title-motto {
+        justify-self: start;
+        align-self: center;
+        margin-left: 1em;
+    }
+
+    header h1 {
+        font-size: 2.9em;
+    }
+
+    .motto {
+        font-size: 1.1em;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+        font-size: .825em;
+        padding: 1em;
+    }
+    
+    .navigation li:first-child {
+        display: none;
+    }
+
+
+    /* TOWN DATA STYLING */
+    div.town-info section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        max-width: 800px;
+        padding: 2em 0;
+        box-shadow: 0 0 5px 5px #195671;
+    }
+    
+    div.town-info section:nth-of-type(odd) p {
+        grid-column: 1;
+        padding: 0;
+    }
+
+    div.town-info section:nth-of-type(even) p {
+        grid-column: 2;
+        padding: 0;
+    }
+
+    div.town-info section:nth-of-type(odd) img.town-img {
+        grid-column: 2;
+        grid-row: 1/6;
+        justify-self: center;
+        align-self: center;
+    }
+
+    div.town-info section:nth-of-type(even) img.town-img {
+        grid-column: 1;
+        grid-row: 1/6;
+        justify-self: center;
+        align-self: center;
+    }
+
+    div.town-info section img.town-img {
+        margin: 0;
+    }
+
+    div.town-info section h3 {
+        align-self: end;
+        margin: 0;
+    }
+
+    div.town-info section p.town-motto {
+        font-size: .85em;
+        margin: .25em;
+    }
+
+    div.town-info section div.info-div {
+        grid-row: 3/6;
+        margin: 1em 0 0 0;
+    }
+
+    .article-img {
+        float: right;
+        max-width: initial;
+        margin: 0 0 .5em 1em;
+        border-radius: 5px;
+    }
+
+    .contact-div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-map{
+        display: block;
+        width: 38%;
+        height: 38%;
+        margin-right: 20px;
+    }
+    
+    .contact-info {
+        margin: auto;
+        text-align: left;
+        font-weight: initial;
+    }
+    
+    footer span {
+        display: initial;
+    }
+    
+    .separate {
+        display: initial;
+    }
+
+}

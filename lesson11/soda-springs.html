@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Chris Fowler">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Idaho Weather | Chris Fowler's Weather Fortune Site | BYU-I</title>
+    <meta name="description" content="Preston Idaho Weather Forecast; for Chris Fowler's Weather Fortune site; for Web Design and Development I (WDD 230). This is for the Fall 2020 semester at Brigham Young University-Idaho (BYUI).">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/soda-springs-css/small.css">
+    <link rel="stylesheet" href="css/soda-springs-css/medium.css">
+    <link rel="stylesheet" href="css/soda-springs-css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Montserrat&family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer></script>
+    <script src="js/webfontload.js" defer></script>
+    <script src="js/responsive-menu.js" defer></script>
+    <script src="js/weather-api.js" defer></script>
+    <script src="js/dates.js" defer></script>
+</head>
+
+<body>
+
+  <aside id="announcment">Saturday = Preston Pancakes in the Park!
+    <br>9:00 a.m. Saturday at the city park pavilion.</aside>
+
+  <header>
+    <img class="main-logo" src="images/logo.png" alt="WeatherFortune.com Site Logo">
+    <div class="title-motto">
+      <h1>Weather Fortune</h1>
+      <div class="motto">~ The Future of Your Weather ~</div>
+    </div>
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li><a id="menu-button" href="#" onclick="toggleMenu()">Menu</a></li>
+      <li><a href="index.html">Home</a> </li>
+      <li><a href="preston.html">Preston</a></li>
+      <li><a class="active" href="#">Soda Springs</a></li>
+      <li><a href="fish-haven.html">Fish Haven</a></li>
+      <li><a href="storm-center.html">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>  
+
+  <main>
+
+    <h2>Soda Springs, Idaho</h2>
+
+    <div class="hero-div">
+      <picture>
+        <source media="(max-width: 500px)" srcset="images/preston500.jpg">
+        <source media="(max-width: 800px)" srcset="images/preston800.jpg">
+        <img class="hero-img" src="images/preston1280.jpg" alt="Preston Idaho's Famous Potatoes">
+      </picture>
+
+      <section class="weather-summary">
+        <h3 class="summary-title">Weather Summary</h3>
+        <div class="names">
+          Conditions:<br>
+          Current Temp:<br>
+          Wind Speed:<br>
+          Wind Chill:<br>
+          Humidity:<br>
+        </div>
+        
+        <div class="values">
+          <span id="description">Sunny</span><br>
+          <span id="currenttemp">34</span>&deg; F<br>     <!-- was summary-tempF -->
+          <span id="windspeed">7</span> mph<br>     <!-- was summary-windspeed -->
+          <span id="windchill"></span><br>             <!-- was summary-chillF -->
+          <span id="humidity">52</span>%<br>        <!-- was summary-humidity -->
+        </div>
+      </section>
+    </div>
+
+    <div class="forecast-div">
+      <h3 class="forecast-title">5 Day Forecast</h3>
+
+      <section id="day1" class="day">
+        <h4>Tue</h4>
+        <div>
+          <img class="forecast-icon" src="#" alt="Current Weather Conditions Icon">
+          <span></span>
+        </div>
+      </section>
+      
+      <section id="day2" class="day">
+        <h4>Wed</h4>
+        <div>
+          <img class="forecast-icon" src="#" alt="Current Weather Conditions Icon">
+          <span></span>
+        </div>
+      </section>
+
+      <section id="day3" class="day">
+        <h4>Thur</h4>
+        <div>
+          <img class="forecast-icon" src="#" alt="Current Weather Conditions Icon">
+          <span></span>
+        </div>
+      </section>
+
+      <section id="day4" class="day">
+        <h4>Fri</h4>
+        <div>
+          <img class="forecast-icon" src="#" alt="Current Weather Conditions Icon">
+          <span></span>
+        </div>
+      </section>
+      
+      <section id="day5" class="day">
+        <h4>Sat</h4>
+        <div>
+          <img class="forecast-icon" src="#" alt="Current Weather Conditions Icon">
+          <span></span>
+        </div>
+      </section>
+
+    </div>
+
+    <article class="clearfix">
+      <img class="article-img" src="images/costumes1.jpg" alt="Two Boys in Mummy Costumes">
+      <h3 class="article-title">Halloween Costume Contest</h3>
+      <h4 class="article-title">by Barry A. Live</h4>
+      <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odit nihil doloribus nam quisquam necessitatibus beatae veniam sint, praesentium consequuntur aperiam minima fugit accusantium? Earum nam ab veritatis repellendus a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestiae expedita vitae optio, impedit saepe quasi fugit, doloribus assumenda, natus in rem sit earum tenetur inventore? Inventore repellendus unde id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit explicabo asperiores corporis accusantium tempore obcaecati nihil, voluptatum ipsam sint perspiciatis voluptates tenetur ipsum, nostrum eaque quidem, soluta corrupti totam a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ea ut, quaerat amet eaque sint eos deserunt distinctio ipsam velit tenetur minima totam numquam error modi enim nisi dolorem dicta.</p>
+    </article>
+
+    <div class="contact-div">
+      <img class="contact-map" src="images/map.jpg" alt="Map of Preston Area">
+      <div class="contact-info">
+        &#9993; weatherfortune@email.com
+        <br>
+        &#9742; 208-WEA-THER
+        <br>
+        &#10140; 186 W 2nd N St, Preston, ID 83263
+        <br>
+        <a href="https://www.facebook.com" target="blank"><img class="social-icon" src="images/facebook.png" alt="Facebook Icon"></a>
+        <a href="https://www.instagram.com" target="blank"><img class="social-icon" src="images/instagram.png" alt="Instagram Icon"></a>
+        <a href="https://www.twitter.com" target="blank"><img class="social-icon" src="images/twitter.png" alt="Twitter Icon"></a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+
+    <div id="copyright">
+      <span id="currentYear"></span>
+      <span class="separate"> | </span>
+      <span><a href="../index.html">Chris Fowler</a></span>
+      <span class="separate"> | </span>
+      <span>Live Data From: <a href="https://openweathermap.org/" target="blank">OpenWeatherMap.org</a></span>
+    </div>
+
+    <div class="dates">
+      <span id="currentDate"></span>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

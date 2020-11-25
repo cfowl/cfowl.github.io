@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Chris Fowler">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Gallery | Chris Fowler's Weather Fortune Site | BYU-I</title>
+    <meta name="description" content="Gallery page for Chris Fowler's Weather Fortune site; for Web Design and Development I (WDD 230). This is for the Fall 2020 semester at Brigham Young University-Idaho (BYUI).">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/gallery-css/small.css">
+    <link rel="stylesheet" href="css/gallery-css/medium.css">
+    <link rel="stylesheet" href="css/gallery-css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Montserrat&family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer></script>
+    <script src="js/webfontload.js" defer></script>
+    <script src="js/responsive-menu.js" defer></script>
+    <script src="js/lazyload.js" defer></script>
+    <script src="js/dates.js" defer></script>
+</head>
+
+<body>
+
+  <aside id="announcment">Saturday = Preston Pancakes in the Park!
+    <br>9:00 a.m. Saturday at the city park pavilion.</aside>
+
+  <header>
+    <img class="main-logo" src="images/logo.png" alt="WeatherFortune.com Site Logo">
+    <div class="title-motto">
+      <h1>Weather Fortune</h1>
+      <div class="motto">~ The Future of Your Weather ~</div>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="navigation">
+      <li><a id="menu-button" href="#" onclick="toggleMenu()">Menu</a></li>
+      <li><a href="index.html">Home</a> </li>
+      <li><a href="preston.html">Preston</a></li>
+      <li><a href="soda-springs.html">Soda Springs</a></li>
+      <li><a href="fish-haven.html">Fish Haven</a></li>
+      <li><a href="storm-center.html">Storm Center</a></li>
+      <li><a class="active" href="#">Gallery</a></li>
+    </ul>
+  </nav>  
+
+  <main>
+      <h2>Weather Fortune Gallery</h2>
+      <div class=gallery-grid>
+        <figure>
+            <img data-src="images/fall-colors.jpg" src="images/placeholder.jpg" alt="Autumn Tree Colors">
+            <figcaption>The First Signs of Autumn</figcaption>
+        </figure>
+        <figure>
+            <img data-src="images/frosty.jpg" src="images/placeholder.jpg" alt="Early Frost on Garden Leaves">
+            <figcaption>An Early Frost on the Garden</figcaption>
+        </figure>
+        <figure>
+            <img data-src="images/partly-cloudy.jpg" src="images/placeholder.jpg" alt="Partly-Cloudy Partly-Sunny Skies">
+            <figcaption>Partly Cloudy or Mostly Sunny?</figcaption>
+        </figure>
+        <figure>
+            <img data-src="images/puddles.jpg" src="images/placeholder.jpg" alt="Puddles After Rainstorm">
+            <figcaption>Puddles After the Rainstorm</figcaption>
+        </figure>
+        <figure>
+            <img data-src="images/rainbow.jpg" src="images/placeholder.jpg" alt="Rainbow in the Sky">
+            <figcaption>Rainbow After a Summer Rain</figcaption>
+        </figure>
+        <figure>
+            <img data-src="images/spring.jpg" src="images/placeholder.jpg" alt="Spring Flowers">
+            <figcaption>April Showers Bring May Flowers</figcaption>
+        </figure>
+        <figure>
+            <img data-src="images/stormy-lake.jpg" src="images/placeholder.jpg" alt="Dark Storm Clouds Overlooking Lake">
+            <figcaption>Storm Clouds Over the Bear Lake</figcaption>
+        </figure>
+        <figure>
+            <img data-src="images/sunrise.jpg" src="images/placeholder.jpg" alt="Midsummer Sunrise">
+            <figcaption>Watching the Sunrise</figcaption>
+        </figure>
+        <figure>
+            <img data-src="images/uphill-snow.jpg" src="images/placeholder.jpg" alt="Walking in the Snow">
+            <figcaption>Uphill, Both Ways, In the Snow!</figcaption>
+        </figure>
+      </div>
+  </main>
+
+  <footer>
+
+    <div id="copyright">
+      <span id="currentYear"></span>
+      <span class="separate"> | </span>
+      <span><a href="../index.html">Chris Fowler</a></span>
+    </div>
+
+    <div class="dates">
+      <span id="currentDate"></span>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>             <!-- CHANGE THINGS !!!! -->

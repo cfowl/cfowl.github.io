@@ -1,0 +1,33 @@
+@media only screen and (min-width: 64em) {
+
+    .main-logo {
+        width: 12em;
+    }
+
+    header h1 {
+        font-size: 3.2em;
+    }
+
+    .motto {
+        font-size: 1.3em;
+    }
+
+    .navigation a {
+        font-size: 1em;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        border-radius: 20px;
+    }
+
+    figure:hover {
+        box-shadow: 5px 5px 20px 10px #50514f;
+        font-weight: bold;
+    }
+
+    footer {
+        border-radius: 15px;
+        max-width: 960px;
+    }
+}
