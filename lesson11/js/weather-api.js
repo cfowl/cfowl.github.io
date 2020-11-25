@@ -65,7 +65,9 @@ fetch(forecastURL)
         // gets icon and plugs it into html
         const icon = day.getElementsByTagName("img")[0];
         const iconSrc = `https://openweathermap.org/img/w/${i.weather[0].icon}.png`;
+        const iconAlt = `${i.weather[0].description} icon`
         icon.setAttribute("src", iconSrc);
+        icon.setAttribute("alt", iconAlt)
 
         // gets temp at 18:00:00 and plugs it into html
         day.getElementsByTagName("span")[0].innerHTML = `${i.main.temp.toFixed(1)}&deg; F`;
