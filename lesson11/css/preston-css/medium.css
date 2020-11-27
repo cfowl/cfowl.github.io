@@ -117,7 +117,7 @@
 
     .contact-div {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         justify-items: center;
         margin: 0 auto;
     }

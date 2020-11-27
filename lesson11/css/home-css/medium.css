@@ -1,6 +1,6 @@
 @media only screen and (min-width: 41em) {
 
-    main {
+    main, footer {
         max-width: 1280px;
     }
 
@@ -112,15 +112,16 @@
     }
 
     .contact-div {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        margin: 0 auto;
     }
 
     .contact-map{
         display: block;
-        width: 38%;
-        height: 38%;
-        margin-right: 20px;
+        max-width: 300px;
+        width: 100%;
     }
     
     .contact-info {
