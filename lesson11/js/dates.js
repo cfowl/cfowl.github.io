@@ -5,19 +5,31 @@ let options = {
     year: "numeric"
 };
 
+let date = new Date();
+
 // shows current date
-document.getElementById("currentDate").textContent = "Today is " + new Date().toLocaleDateString("en-GB", options);
+document.getElementById("currentDate").textContent = "Today is " + date.toLocaleDateString("en-GB", options);
 
 // shows current year for copyright
-document.getElementById("currentYear").innerHTML = "&copy; " + new Date().getFullYear() + " Weather Fortune";
+document.getElementById("currentYear").innerHTML = "&copy; " + date.getFullYear() + " Weather Fortune";
 
-// shows announcment if Friday
-day = new Date().getDay();
-let announcement = document.getElementById("announcment");
+// determines when to show/hide the town announcements
+let day = date.getDay();
+let announcment = document.getElementById("announcment");
+let town = document.getElementById("city-id").textContent;
 
-if (day == 5) {
-    announcement.style.display = "block";
+// shows Preston announcment if Friday
+if (day == 5 && town.includes("Preston")) {
+    announcment.style.display = "block";
+}
+// shows Soda Springs announcment if Sunday
+else if (day == 0 && town.includes("Soda Springs")) {
+    announcment.style.display = "block";
+}
+// shows Fish Haven announcment if Tuesday
+else if (day == 2 && town.includes("Fish Haven")) {
+    announcment.style.display = "block";
 }
 else {
-    announcement.style.display = "none";
+    announcment.style.display = "none";
 }
