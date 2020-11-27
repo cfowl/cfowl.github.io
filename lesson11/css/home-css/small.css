@@ -123,6 +123,10 @@ div.town-info section {
     padding: 1em 0;
 }
 
+div.town-info a {
+    text-decoration: inherit;
+}
+
 div.town-info section h3 {
     font-size: 1.7em;
     padding: 0;

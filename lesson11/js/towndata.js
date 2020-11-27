@@ -18,8 +18,11 @@ fetch(requestURL)
               let population = document.createElement("p");
               let annualRainfall = document.createElement("p");
               let townImage = document.createElement("img");
+              let townLink = document.createElement("a");                               // creates a link
 
               h3.textContent = `${towns[i].name}, Idaho`;
+              let townHref = `${towns[i].name.split(" ").join("").toLowerCase()}.html`; // sets link href to townname.html
+              townLink.setAttribute("href", townHref);                                  // adds href to link
               townMotto.textContent = towns[i].motto;
               townMotto.setAttribute("class", "town-motto");
               yearFounded.textContent = `Founded in ${towns[i].yearFounded}`;
@@ -36,10 +39,11 @@ fetch(requestURL)
               infoDiv.appendChild(population);
               infoDiv.appendChild(annualRainfall);
                 
-              card.appendChild(h3);
-              card.appendChild(townMotto);
-              card.appendChild(townImage);
-              card.appendChild(infoDiv);
+              townLink.appendChild(h3);                                                 // all elements in card are clickable link
+              townLink.appendChild(townMotto);
+              townLink.appendChild(townImage);
+              townLink.appendChild(infoDiv);
+              card.appendChild(townLink);                                               // appends all elements in link to card
 
               document.querySelector("div.town-info").appendChild(card);
         }

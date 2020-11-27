@@ -16,7 +16,10 @@ document.getElementById("currentYear").innerHTML = "&copy; " + date.getFullYear(
 // determines when to show/hide the town announcements
 let day = date.getDay();
 let announcment = document.getElementById("announcment");
-let town = document.getElementById("city-id").textContent;
+let town = "";
+if (document.getElementById("city-id") != null) {
+    town = document.getElementById("city-id").textContent;
+}
 
 // shows Preston announcment if Friday
 if (day == 5 && town.includes("Preston")) {
@@ -31,5 +34,7 @@ else if (day == 2 && town.includes("Fish Haven")) {
     announcment.style.display = "block";
 }
 else {
-    announcment.style.display = "none";
+    if (announcment != null) {
+        announcment.style.display = "none";
+    }
 }
