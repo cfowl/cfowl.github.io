@@ -18,6 +18,10 @@ header {
     padding: 15px;
 }
 
+header a {
+    display: inherit;
+}
+
 .main-logo {
     width: 8em;
     display: block;
