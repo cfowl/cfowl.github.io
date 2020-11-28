@@ -10,19 +10,18 @@ fetch(requestURL)
       const towns = jsonObject["towns"]
       for(let i = 0; i < towns.length; i++) {
           if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
-
+            // START // adds town snippets to home page
+            // only adds them if it's the home page
+            if (document.querySelector("div.town-info") != null) {
               let card = document.createElement("section");
-              let h3 = document.createElement("h3");
+              let cardH3 = document.createElement("h3");
               let townMotto = document.createElement("p");
               let yearFounded = document.createElement("p");
               let population = document.createElement("p");
               let annualRainfall = document.createElement("p");
               let townImage = document.createElement("img");
-              let townLink = document.createElement("a");                               // creates a link
 
-              h3.textContent = `${towns[i].name}, Idaho`;
-              let townHref = `${towns[i].name.split(" ").join("").toLowerCase()}.html`; // sets link href to townname.html
-              townLink.setAttribute("href", townHref);                                  // adds href to link
+              cardH3.textContent = `${towns[i].name}, Idaho`;
               townMotto.textContent = towns[i].motto;
               townMotto.setAttribute("class", "town-motto");
               yearFounded.textContent = `Founded in ${towns[i].yearFounded}`;
@@ -39,13 +38,32 @@ fetch(requestURL)
               infoDiv.appendChild(population);
               infoDiv.appendChild(annualRainfall);
                 
-              townLink.appendChild(h3);                                                 // all elements in card are clickable link
-              townLink.appendChild(townMotto);
-              townLink.appendChild(townImage);
-              townLink.appendChild(infoDiv);
-              card.appendChild(townLink);                                               // appends all elements in link to card
+              card.appendChild(cardH3);
+              card.appendChild(townMotto);
+              card.appendChild(infoDiv);
+              card.appendChild(townImage);
 
               document.querySelector("div.town-info").appendChild(card);
+            }
+            // END //
+
+            // START // adds town events to town pages
+            // only adds them if it's a town page
+            let townname = towns[i].name.split(" ").join("").toLowerCase();
+            if(document.querySelector(`#${townname}-events`) != null) {
+              let eventH3 = document.createElement("h3");
+              eventH3.textContent = `Upcoming ${towns[i].name} Events`;
+              document.querySelector(`#${townname}-events`).appendChild(eventH3);
+              let events = towns[i].events;
+              let ul = document.createElement("ul");
+              events.forEach(e => {
+                let event = document.createElement("li");
+                event.textContent = e;
+                event.style.listStyle = "none";
+                document.querySelector(`#${townname}-events`).appendChild(event);
+              });
+            }
+            // END //
         }
 
       }
