@@ -72,7 +72,7 @@ fetch(forecastURL)
         // gets temp at 18:00:00 and plugs it into html
         day.getElementsByTagName("span")[0].innerHTML = `${i.main.temp.toFixed(1)}&deg; F`;
 
-      })
+      });
 
   });
 
