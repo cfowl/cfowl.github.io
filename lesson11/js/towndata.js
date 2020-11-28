@@ -40,8 +40,8 @@ fetch(requestURL)
                 
               card.appendChild(cardH3);
               card.appendChild(townMotto);
-              card.appendChild(infoDiv);
               card.appendChild(townImage);
+              card.appendChild(infoDiv);
 
               document.querySelector("div.town-info").appendChild(card);
             }
