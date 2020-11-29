@@ -110,7 +110,7 @@ nav {
 
 .navigation .active {
     color: #195671;
-    text-decoration: underline;
+    text-shadow: 0 1px #195671;
     background-color: #FFF700;
     font-weight: bold;
 }
