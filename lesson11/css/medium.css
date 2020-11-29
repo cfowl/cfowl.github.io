@@ -117,6 +117,7 @@
         left: 40px;
         grid-template-columns: 3fr 2fr;
         border-radius: 5px;
+        padding: 1.5em;
     }
 
     .names, .values, .summary-title {
@@ -168,6 +169,12 @@
         box-shadow: 0 0 10px black;
         border-radius: 5px;
         overflow: hidden;
+    }
+
+    /* FORM STYLING FOR STORM CENTER PAGE */
+    form textarea.comments {
+        height: 200px;
+        max-width: 40em;
     }
 
     /* GALLERY GRID FOR GALLERY PAGE */

@@ -305,11 +305,6 @@ form fieldset {
     background-color: #f9f9f9;
 }
 
-form fieldset:hover {
-    background-color: white;
-    border: 4px double #50514f;
-}
-
 form legend {
     color: #50514f;
     margin: 0 1em;
@@ -378,6 +373,7 @@ form label.top input:required:valid {
 
 form textarea.comments {
     height: 100px;
+    max-width: 20em;
 }
 
 /* CONTACT DIV STYLING FOR ALL PAGES DISPLAYING SUCH */

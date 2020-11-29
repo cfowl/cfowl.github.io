@@ -77,6 +77,26 @@
         width: 90%;
     }
 
+    /* FORM STYLING FOR STORM CENTER PAGE */
+    form fieldset:hover {
+        background-color: white;
+        border: 4px double #50514f;
+    }
+
+    form fieldset {
+        padding-bottom: 1.5em;
+    }
+
+    form label.danger {
+        display: inline;
+        margin-left: 2em;
+    }
+
+    form textarea.comments {
+        height: 300px;
+        max-width: 60em;
+    }
+
     /* GALLERY GRID STYLING FOR GALLERY PAGE */
     .gallery-grid {
         grid-template-columns: repeat(3, 1fr);
