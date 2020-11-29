@@ -358,7 +358,7 @@ form input.submit:hover {
 }
 
 form label.top input:required {
-    border-left: red solid 4px;
+    border-left: #AF110E solid 4px;
 }
 
 form label.top input:required:valid {
@@ -369,6 +369,11 @@ form label.top input:required:valid {
     margin-left: 5px;
     color: #AF110E;
     font-weight: bold;
+}
+
+#storm-range {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 form textarea.comments {
