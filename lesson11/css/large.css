@@ -1,4 +1,9 @@
+/*************************** LARGE CSS FILES COMBINED ***************************/
+
 @media only screen and (min-width: 61em) {
+/* TOWN PAGES WERE 64em */
+/* STORM CENTER WAS 64em */
+/* GALLERY PAGE WAS 64em */
 
     .main-logo {
         width: 12em;
@@ -16,6 +21,7 @@
         font-size: 1em;
     }
 
+    /* THERE WAS SOME H2 STYLING HERE FOR STORM CENTER?????? CHECK IT!!!!!! */
     h2 {
         margin-bottom: 1.5em;
     }
@@ -60,8 +66,29 @@
     div.town-info section img.town-img {
         box-shadow: none;
     }
-    /* END OF TOWN INFO STYLING */
 
+    /* FIVE DAY FORECAST STYLING FOR TOWN PAGES */
+    .forecast-div {
+        width: 80%;
+    }
+
+    .forecast-div .day {
+        width: 90%;
+    }
+
+    /* GALLERY GRID STYLING FOR GALLERY PAGE */
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        border-radius: 20px;
+    }
+
+    figure:hover {
+        box-shadow: 5px 5px 20px 10px #50514f;
+        font-weight: bold;
+    }
+
+    /* THERE WAS SOME FOOTER STYLING HERE FOR STORM CENTER?????? CHECK IT!!!!!! */
+    /* THERE WAS SOME FOOTER STYLING HERE FOR GALLERY PAGE?????? CHECK IT!!!!!! */
     footer {
         border-radius: 0 0 15px 15px;
     }
@@ -72,3 +99,4 @@
         clear: both;
     }
 }
+

@@ -1,0 +1,428 @@
+/*************************** SMALL CSS FILES COMBINED ***************************/
+
+/******* SHARED CSS ACROSS ALL PAGES *******/
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* THERE WAS SOME DIFFERENCE HERE FOR STORM CENTER FORM ???????? CHECK IT!!!!!!! */
+main {
+    font-family: 'Montserrat', sans-serif;
+    color: #50514f;
+    max-width: 960px;
+    margin: 10px auto 0 auto;
+}
+
+#announcment {
+    padding: .75em;
+    text-align: center;
+    color: #FFF700;
+    background-color: #AF110E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #50514f;
+    padding: 15px;
+}
+
+header a {
+    display: inherit;
+}
+
+.main-logo {
+    width: 8em;
+    display: block;
+    margin: auto;
+}
+
+.motto {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+.logo {
+    width: 8em;
+}
+
+header h1, header div {
+    color: #FFF700;
+    text-align: center;
+    filter: drop-shadow(3px 2px 4px black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #AF110E;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+}
+
+/* THERE WAS SOME STYLING HERE FOR H2, H3 FOR STORM CENTER ???????? CHECK IT!!!!!!! */
+
+/* ------------ NAVIGATION ------------ */
+nav {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #195671;
+    text-align: center;
+}
+
+.navigation {
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+.navigation li a {
+    display: block;
+    color: #FFF700;
+    font-family: 'Montserrat', sans-serif;
+	padding: 0.9em;
+    text-decoration: none;
+    border: 1px solid rgba(0,0,0,.25);
+}
+
+.navigation a:hover {
+    background-color: #FFF700;
+    color: #195671;
+    font-weight: bold;
+}
+
+.navigation .active {
+    color: #195671;
+    text-decoration: underline;
+    background-color: #FFF700;
+    font-weight: bold;
+}
+
+/* THERE WAS SOME STYLING HERE FOR H2, H3 FOR GALLERY ???????? CHECK IT!!!!!!! */
+
+h2 {
+    margin-top: 2.5em;
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    display: block;
+    margin: 1em auto;
+}
+
+
+/* HOME PAGE TOWN DATA STYLING */
+div.town-info section {
+    border: 2px solid #195671;
+    text-align: center;
+    background-color: #FFF70010;
+    margin: 1em auto;
+    padding: 1em 0;
+}
+
+div.town-info section h3 {
+    font-size: 1.7em;
+    padding: 0;
+    margin: 0 0 .5em 0;
+}
+
+div.town-info section img.town-img {
+    margin: 0 0 1em 0;
+    box-shadow: 0 0 5px 3px #195671;
+}
+
+div.town-info section p {
+    margin: .25em 0;
+}
+
+div.town-info section p.town-motto {
+    margin: 0 auto 1em auto;
+    color: #195671;
+    font-weight: bold;
+    font-style: italic;
+    font-size: .95em;
+}
+
+/* WEATHER SUMMARY STYLING FOR ALL TOWN PAGES */
+/* FIX THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.hero-div {
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.weather-summary {
+    background-color: rgba(200,200,200,.85);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .75em;
+    color: #AF110E;
+    font-weight: bold;
+    box-shadow: 0 0 10px black;
+    padding: .5em;
+    line-height: 1.5em;
+}
+
+.summary-title {
+    grid-column: 1/3;
+    justify-self: center;
+    text-align: center;
+    margin: 0;
+    padding-bottom: .2em;
+    width: 90%;
+    border-bottom: 2px solid #AF110E;
+}
+
+.names {
+    text-align: right;
+}
+
+.values {
+    text-align: left;
+}
+
+.weather-summary #description {
+    text-transform: capitalize;
+}
+
+/* FIVE DAY FORECAST STYLING FOR ALL TOWN PAGES */
+.forecast-div {
+    display: none;
+}
+
+.forecast-icon {
+    padding: .8em;
+}
+
+/* TOWN EVENTS STYLING FOR ALL TOWN PAGES */
+section.events {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1em 0;
+    border: 5px solid #195671;
+    max-width: 500px;
+}
+
+section.events li {
+    padding: .25em;
+    font-weight: bold;
+}
+
+/* THERE WAS SOME STYLING HERE FOR IMG FOR GALLERY PAGE ???????? CHECK IT!!!!!!! */
+
+.gallery-grid {
+    background-color: #50514f30;
+    padding: 20px 0;
+}
+
+figure {
+    width: 320px;
+    margin: 1.5em auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+figcaption {
+    padding: .5em 0;
+    text-align: center;
+    color: #fff700;
+    background-color: #AF110Eee;
+    margin: 0;
+}
+
+/* ARTICLE STYLING FOR ALL PAGES WITH AN ARTICLE */
+article {
+    background-color: #50514f;
+    color: white;
+    line-height: 1.25em;
+    padding: 2.5em;
+    margin: 1.5em auto;
+}
+
+/* THERE WAS SOME DIFFERENCE HERE FOR TOWN PAGES ???????? CHECK IT!!!!!!! */
+.article-img {
+    display: block;
+    margin: 0 auto 2.5em auto;
+    max-width: 100%;
+    box-shadow: 0 0 10px white;
+}
+
+.article-title {
+    margin: 0;
+    line-height: 1.5em;
+    color: #FFF700;
+}
+
+/* ------------ THANKS PAGE STYLING FOR STORM CENTER SUBMIT ------------ */
+h2.thanks {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+p.thanks {
+    text-align: center;
+    margin-bottom: 8em;
+}
+
+
+/* ------------ FORM STYLING FOR STORM CENTER------------ */
+form {
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+form fieldset {
+    margin: 2em 0;
+    border: 4px solid #50514f;
+    border-radius: 7px;
+    padding: .5em 2%;
+    background-color: #f9f9f9;
+}
+
+form fieldset:hover {
+    background-color: white;
+    border: 4px double #50514f;
+}
+
+form legend {
+    color: #50514f;
+    margin: 0 1em;
+    padding: 0 .5em;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1em;
+    color: #195671;
+    font-size: .9em;
+}
+
+form label.top input, form label.top select, form textarea {
+    display: block;
+    font-size: 1em;
+    border: solid 1px #50514f;
+    border-radius: 4px;
+    padding: .75em;
+    color: #50514f;
+    width: 100%;
+    max-width: 20em;
+    background-color: rgba(0,0,0,.05);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75em 0;
+    color: #555;
+}
+
+form input.submit {
+    border: none;
+    background-color: #AF110E;
+    color: white;
+    border-radius: 12px;
+    padding: 1em 1.25em;
+    margin: 0 0 2em 2%;
+    width: 80%;
+    max-width: 20em;
+}
+
+form input.submit:hover {
+    box-shadow: 2px 2px 10px #50514f;
+    font-weight: bold;
+}
+
+form label.top input:required {
+    border-left: red solid 4px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 4px;
+}
+
+#storm-index {
+    margin-left: 5px;
+    color: #AF110E;
+    font-weight: bold;
+}
+
+form textarea.comments {
+    height: 100px;
+}
+
+/* CONTACT DIV STYLING FOR ALL PAGES DISPLAYING SUCH */
+.contact-div {
+    padding: 2.5em;
+    background-color: #195671;
+}
+
+.contact-map{
+    display: none;
+}
+
+.contact-info {
+    line-height: 3em;
+    color: #FFF700;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+}
+
+.social-icon {
+    text-align: center;
+    margin: 1em;
+}
+
+/* ------------ FOOTER STYLING FOR ALL PAGES ------------ */
+footer {
+    background-color: #50514f;
+    text-align: center;
+    padding: 25px 0;
+    margin: 0 auto 1em auto;
+    font-size: 1.1rem;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    line-height: 1.5rem;
+}
+
+#copyright a {
+    color: white;
+}
+
+#copyright a:hover {
+    color: lightgrey;
+}
+
+#copyright a:active {
+    color: #FFF700;
+}
+
+.dates {
+    font-size: 1em;
+    color: #FFF700;
+}
+
+footer span {
+    display: block;
+}
+
+.separate {
+    display: none;
+}

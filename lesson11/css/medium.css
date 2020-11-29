@@ -1,5 +1,11 @@
-@media only screen and (min-width: 41em) {
+/*************************** MEDIUM CSS FILES COMBINED ***************************/
 
+@media only screen and (min-width: 41em) {
+/* TOWN PAGES WERE 38.5em */
+/* STORM CENTER WAS 44em */
+/* GALLERY PAGE WAS 44em */
+
+    /******* SHARED CSS ACROSS ALL PAGES *******/
     main, footer {
         max-width: 1280px;
     }
@@ -104,6 +110,75 @@
         margin: 1em 0 0 0;
     }
 
+    /* WEATHER SUMMARY FOR TOWN PAGES */
+    .weather-summary {
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        grid-template-columns: 3fr 2fr;
+        border-radius: 5px;
+    }
+
+    .names, .values, .summary-title {
+        filter: drop-shadow(1px 1px 1px white);
+    }
+
+    /* FIVE DAY FORECAST FOR TOWN PAGES */
+    .forecast-div {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+        grid-gap: 2%;
+        padding: 0;
+        width: 90%;
+        margin: 2.5em auto;
+        text-align: center;
+    }
+
+    .forecast-div .day {
+        width: 98%;
+    }
+
+    .forecast-title {
+        grid-column: 1/6;
+        text-align: center;
+        margin: 1em 0 .6em 0;
+    }
+
+    .forecast-icon {
+        display: block;
+        margin: auto;
+    }
+
+    .forecast-div h4 {
+        background-color: #AF110E;
+        color: #FFF700;
+        margin: 0;
+        padding: .5em;
+    }
+
+    .forecast-div div {
+        background-color: #195671;
+        color: #FFF700;
+        padding: .25em 0 .75em 0;
+        font-weight: 600;
+    }
+
+    .forecast-div section {
+        box-shadow: 0 0 10px black;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    /* GALLERY GRID FOR GALLERY PAGE */
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        margin: 3em 0;
+    }
+
+    /* THERE WAS SOME DIFFERNCE HERE FOR TOWN PAGES???????? CHECK IT!!!!! */
     .article-img {
         float: right;
         max-width: initial;
