@@ -266,8 +266,16 @@ article {
 
 .article-title {
     margin: 0;
+    font-size: 1.5em;
     line-height: 1.5em;
     color: #FFF700;
+}
+
+.article-author {
+    margin: 0;
+    font-weight: lighter;
+    font-style: italic;
+    color: #FFF700CC;
 }
 
 /* ------------ THANKS PAGE STYLING FOR STORM CENTER SUBMIT ------------ */
