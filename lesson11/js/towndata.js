@@ -56,6 +56,7 @@ fetch(requestURL)
               document.querySelector(`#${townname}-events`).appendChild(eventH3);
               let events = towns[i].events;
               let ul = document.createElement("ul");
+              
               events.forEach(e => {
                 let event = document.createElement("li");
                 event.textContent = e;
