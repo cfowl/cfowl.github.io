@@ -2,7 +2,7 @@
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 
 const imgOptions = {
-  threshold: 1
+  threshold: 0
 };
 
 // function that loads an images, sets src to data-src, after loading removes data-src
