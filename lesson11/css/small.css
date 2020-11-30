@@ -342,7 +342,8 @@ form input.submit {
     color: white;
     border-radius: 12px;
     padding: 1em 1.25em;
-    margin: 0 0 2em 2%;
+    display: block;
+    margin: 0 auto 2em auto;
     width: 80%;
     max-width: 20em;
 }

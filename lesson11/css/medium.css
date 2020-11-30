@@ -177,6 +177,10 @@
         max-width: 40em;
     }
 
+    form input.submit {
+        margin: 0 0 2em 2%;
+    }
+
     /* GALLERY GRID FOR GALLERY PAGE */
     .gallery-grid {
         display: grid;
