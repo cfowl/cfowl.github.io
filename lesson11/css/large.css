@@ -1,6 +1,6 @@
 /*************************** LARGE CSS FILES COMBINED ***************************/
 
-@media only screen and (min-width: 61em) {
+@media only screen and (min-width: 64em) {
 /* TOWN PAGES WERE 64em */
 /* STORM CENTER WAS 64em */
 /* GALLERY PAGE WAS 64em */
@@ -79,8 +79,8 @@
 
     /* FORM STYLING FOR STORM CENTER PAGE */
     form fieldset:hover {
-        background-color: white;
-        border: 4px double #50514f;
+        background-color: #f9f9f9;
+        border: 5px inset #195671;
     }
 
     form fieldset {
@@ -106,6 +106,10 @@
     figure:hover {
         box-shadow: 5px 5px 20px 10px #50514f;
         font-weight: bold;
+    }
+
+    .contact-div {
+        border-radius: 15px 15px 0 0;
     }
 
     /* THERE WAS SOME FOOTER STYLING HERE FOR STORM CENTER?????? CHECK IT!!!!!! */

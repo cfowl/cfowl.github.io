@@ -1,6 +1,6 @@
 /*************************** MEDIUM CSS FILES COMBINED ***************************/
 
-@media only screen and (min-width: 41em) {
+@media only screen and (min-width: 42em) {
 /* TOWN PAGES WERE 38.5em */
 /* STORM CENTER WAS 44em */
 /* GALLERY PAGE WAS 44em */
@@ -64,7 +64,6 @@
         grid-template-rows: repeat(5, 1fr);
         max-width: 800px;
         padding: 2em 0;
-        box-shadow: 0 0 5px 5px #195671;
     }
     
     div.town-info section:nth-of-type(odd) p {
@@ -118,6 +117,7 @@
         grid-template-columns: 3fr 2fr;
         border-radius: 5px;
         padding: 1.5em;
+        box-shadow: 0 0 10px black;
     }
 
     .names, .values, .summary-title {
@@ -195,7 +195,7 @@
 
     .contact-div {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 2fr;
         justify-items: center;
         margin: 0 auto;
     }
@@ -207,7 +207,7 @@
     }
     
     .contact-info {
-        margin: auto;
+        margin-left: 20px;
         text-align: left;
         font-weight: initial;
     }
