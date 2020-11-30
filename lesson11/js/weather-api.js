@@ -4,9 +4,10 @@
 const preston = "id=5604473";
 const soda = "id=5607916";
 const fish = "lat=42.0380399&lon=-111.4048681";
+
+// determines which town page is making the API call
 const cityH2 = document.getElementById("city-id").textContent;
 let city = ""
-// determines which town page is making the API call
 if (cityH2.includes("Preston")) {
   city = preston;
 }
