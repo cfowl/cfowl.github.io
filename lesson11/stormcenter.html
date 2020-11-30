@@ -44,74 +44,77 @@
   </nav>  
 
   <main>
-      <h2>Storm Reporting Center</h2>
-      <form>
-      </form>
+    
+    <h2>Storm Reporting Center</h2>
+    <form>
+    </form>
 
-      <form method="GET" action="thanks.html">
-          <fieldset>
-              <legend>User Information</legend>
-              <label class="top">Full Name* <input type="text" name="name"
-                pattern="[a-zA-Z ]{5,}" title="First Last (capitalized first letters)" required></label>
-              <label class="top">Email <input type="email" name="email" placeholder="example@email.com"></label>
-              <label class="top">Phone Number* <input type="tel" name="phone" required></label>
-              <label class="top">Zip Code* <input type="number" name="name" required></label>
-          </fieldset>
-          
-          <fieldset>
-              <legend>Storm Information</legend>
-              <label class="top">Storm Date <input type="date" name="date"></label>
-              <label class="top">Storm Type <input list="storms" name="type">
-                <datalist id="storms">
-                    <option value="Blizzard"></option>
-                    <option value="Flash Flood"></option>
-                    <option value="Hail Storm"></option>
-                    <option value="Hurricane"></option>
-                    <option value="Thunderstorm"></option>
-                    <option value="Tornado"></option>
-                </datalist>
-              </label>
-              <label class="top">Storm Severity: <span id="storm-index"></span>
-                <input type="range" min="1" max="10" value="5" name="severity" id="storm-range">
+    <form method="GET" action="thanks.html">
+        <fieldset>
+            <legend>User Information</legend>
+            <label class="top">Full Name* <input type="text" name="name"
+              pattern="[a-zA-Z ]{5,}" title="First Last (capitalized first letters)" required></label>
+            <label class="top">Email <input type="email" name="email" placeholder="example@email.com"></label>
+            <label class="top">Phone Number* <input type="tel" name="phone" required></label>
+            <label class="top">Zip Code* <input type="number" name="name" required></label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Storm Information</legend>
+            <label class="top">Storm Date <input type="date" name="date"></label>
+            <label class="top">Storm Type <input list="storms" name="type">
+              <datalist id="storms">
+                  <option value="Blizzard"></option>
+                  <option value="Flash Flood"></option>
+                  <option value="Hail Storm"></option>
+                  <option value="Hurricane"></option>
+                  <option value="Thunderstorm"></option>
+                  <option value="Tornado"></option>
+              </datalist>
             </label>
-              <label class="top">Storm Region
-                <select name="region">
-                    <option value="" selected disabled>Select Region ...</option>
-                    <option value="Preston">Preston</option>
-                    <option value="SodaSprings">Soda Springs</option>
-                    <option value="FishHaven">Fish Haven</option>
-                </select>
-              </label>
-          </fieldset>
+            <label class="top">Storm Severity: <span id="storm-index"></span>
+              <input type="range" min="1" max="10" value="5" name="severity" id="storm-range">
+          </label>
+            <label class="top">Storm Region
+              <select name="region">
+                  <option value="" selected disabled>Select Region ...</option>
+                  <option value="Preston">Preston</option>
+                  <option value="SodaSprings">Soda Springs</option>
+                  <option value="FishHaven">Fish Haven</option>
+              </select>
+            </label>
+        </fieldset>
 
-          <fieldset>
-              <legend>Additional Info</legend>
-              <div>User In Danger?
-                <label class="sbs danger"><input type="radio" name="danger"> Yes</label>
-                <label class="sbs danger"><input type="radio" name="danger"> No</label>
-                <label class="sbs danger"><input type="radio" name="danger"> Maybe</label>
-              </div>
-              <label class="top">Additional Information or Comments <textarea class="comments"></textarea></label>
-          </fieldset>
+        <fieldset>
+            <legend>Additional Info</legend>
+            <div>User In Danger?
+              <label class="sbs danger"><input type="radio" name="danger"> Yes</label>
+              <label class="sbs danger"><input type="radio" name="danger"> No</label>
+              <label class="sbs danger"><input type="radio" name="danger"> Maybe</label>
+            </div>
+            <label class="top">Additional Information or Comments <textarea class="comments"></textarea></label>
+        </fieldset>
 
-          <input class="submit" type="submit" value="Report Storm">
-      </form>
+        <input class="submit" type="submit" value="Report Storm">
+    </form>
 
-      <div class="contact-div">
-        <img class="contact-map" src="images/map.jpg" alt="Map of Preston Area">
-        <div class="contact-info">
-          &#9993; weatherfortune@email.com
-          <br>
-          &#9742; 208-WEA-THER
-          <br>
-          &#10140; 186 W 2nd N St, Preston, ID 83263
-          <br>
-          <a href="https://www.facebook.com" target="blank"><img class="social-icon" src="images/facebook.png" alt="Facebook Icon"></a>
-          <a href="https://www.instagram.com" target="blank"><img class="social-icon" src="images/instagram.png" alt="Instagram Icon"></a>
-          <a href="https://www.twitter.com" target="blank"><img class="social-icon" src="images/twitter.png" alt="Twitter Icon"></a>
-        </div>
+    <div class="contact-div">
+      <a href="https://www.google.com/maps/place/186+W+2nd+N+St,+Preston,+ID+83263" target="blank">
+        <img class="contact-map" src="images/map.jpg" alt="Map of Our Location">
+      </a>
+      <div class="contact-info">
+        &#9993; weatherfortune@email.com
+        <br>
+        &#9742; 208-WEA-THER
+        <br>
+        &#10140; 186 W 2nd N St, Preston, ID 83263
+        <br>
+        <a href="https://www.facebook.com" target="blank"><img class="social-icon" src="images/facebook.png" alt="Facebook Icon"></a>
+        <a href="https://www.instagram.com" target="blank"><img class="social-icon" src="images/instagram.png" alt="Instagram Icon"></a>
+        <a href="https://www.twitter.com" target="blank"><img class="social-icon" src="images/twitter.png" alt="Twitter Icon"></a>
       </div>
-      
+    </div>
+
   </main>
 
   <footer>
