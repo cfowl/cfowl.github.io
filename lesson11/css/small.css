@@ -229,7 +229,9 @@ section.events li {
 
 .gallery-grid {
     background-color: #50514f30;
+    border: 5px inset #195671;
     padding: 20px 0;
+    margin-bottom: 1.5em;
 }
 
 figure {
@@ -237,6 +239,7 @@ figure {
     margin: 1.5em auto;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 0 10px 5px #50514f;
 }
 
 figcaption {
@@ -339,6 +342,7 @@ form label.sbs {
 form input.submit {
     border: none;
     background-color: #AF110E;
+    box-shadow: 2px 2px 6px 2px #50514f;
     color: white;
     border-radius: 12px;
     padding: 1em 1.25em;
@@ -349,7 +353,7 @@ form input.submit {
 }
 
 form input.submit:hover {
-    box-shadow: 2px 2px 10px #50514f;
+    box-shadow: none;
     font-weight: bold;
 }
 
