@@ -61,8 +61,10 @@ fetch(requestURL)
                 let event = document.createElement("li");
                 event.textContent = e;
                 event.style.listStyle = "none";
-                document.querySelector(`#${townname}-events`).appendChild(event);
+                ul.appendChild(event);
               });
+              
+              document.querySelector(`#${townname}-events`).appendChild(ul);
             }
             // END //
         }

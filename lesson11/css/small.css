@@ -220,6 +220,10 @@ div.events {
     max-width: 41em;
 }
 
+div.events ul {
+    padding: 0;
+}
+
 div.events li {
     padding: .25em;
     font-weight: bold;
