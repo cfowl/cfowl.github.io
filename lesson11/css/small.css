@@ -212,7 +212,7 @@ div.town-info section p.town-motto {
 }
 
 /* TOWN EVENTS STYLING FOR ALL TOWN PAGES */
-section.events {
+div.events {
     text-align: center;
     margin: 0 auto;
     padding: 1em 0;
@@ -220,7 +220,7 @@ section.events {
     max-width: 41em;
 }
 
-section.events li {
+div.events li {
     padding: .25em;
     font-weight: bold;
 }
