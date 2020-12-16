@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Chris Fowler">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots | Chris Fowler</title>
+    <meta name="description" content="~Scoots home page for Chris Fowler's WDD230 Final Project; Web Design and Development I. This is for the Fall 2020 semester at Brigham Young University-Idaho (BYUI).">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Combo&family=Comfortaa&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer></script>
+    <script src="js/webfontload.js" defer></script>
+    <script src="js/dates.js" defer></script>
+    <script src="js/menu.js" defer></script>
+</head>
+
+<body>
+
+  <header class="clearfix">
+    <a href="index.html"><img id="logo" src="images/logo.png" alt="~Scoots Logo"></a>
+      <h1>Scoots4Fun</h1>
+      <button id="menu-button" onclick="toggleNav()">MENU</button>
+  </header>
+
+  <nav>
+    <ul class="menu-show">
+      <li><a href="index.html">Home</a> </li>
+      <li><a href="rentals.html">Rentals</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li class="active"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="hero-div">
+      <picture>
+        <source media="(max-width: 500px)" srcset="images/palm-hero500.jpg">
+        <source media="(max-width: 800px)" srcset="images/palm-hero800.jpg">
+        <img class="hero-img" src="images/palm-hero1280.jpg" alt="Beach with ocean and palm trees">
+      </picture>
+      <a id="call2action" href="reservations.html">Reserve Your ~Scooter Now</a>
+    </div>
+
+    <h2 class="contact-map-title">Map</h2>
+    <div class="contact-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d119605.44832277119!2d-86.9677616866935!3d20.478732117888974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPlaya%20del%20Carmen-Cozumel%20Ferry%20dock!5e0!3m2!1sen!2sus!4v1608083609841!5m2!1sen!2sus" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    <div class="contact-grid">
+      <section class="contact">
+        <h2 class="contact-form-title">Contact Us</h2>
+        <div class="contact-form">
+          <form method="GET" action="confirmation.html">
+            <fieldset>
+              <legend>Your Comments & Questions</legend>
+              <!-- Customer Name -->
+              <label class="top small-input">Full Name* <input type="text" name="name" pattern="[a-zA-Z ]{5,}" title="First Last (capitalized first letters)" required></label>
+              <!-- Customer Email Address -->
+              <label class="top small-input">Email <input type="email" name="email" placeholder="example@email.com" required></label>
+              <!-- Comments -->
+              <label class="top">Comments <textarea class="comments" name="extra" width="230px" heigt="330px"></textarea></label>
+          </fieldset>
+            <!-- Submit Button -->
+            <input class="submit" type="submit" value="Send Comments">
+          </form>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2 class="contact-title">Contact Info</h2>
+        <div class="contact-info portrait-div">
+          <img src="images/owner.jpg" alt="Portrait of Joseph Gonzalez, ~Scoots owner">
+          <figcaption>~Scoots Owner - Joseph Gonzalez</figcaption>
+          <p>&#x2691; Av. Rafael E. Melgar, Centro,<br>Cozumel, Mexico 77600</p>
+          <p>&#x260e; +52-987-853-0075</p>
+          <p>&#x2709; ~scoots@4fun.com</p>
+          <a href="https://www.instagram.com" target="blank"><img src="images/instagram.png" alt="Instagram Link Logo"></a>
+          <a href="https://www.facebook.com" target="blank"><img src="images/facebook.png" alt="Facebook Link Logo"></a>
+          <a href="https://www.youtube.com" target="blank"><img src="images/youtube.png" alt="YouTube Link Logo"></a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+      <span id="copyright"></span>
+      <span>Chris Fowler</span>
+      <span class="separate"> | </span>
+      <span><a href="attributions.html" target="blank">Attributions</a></span>
+      <span class="separate"> | </span>
+      <span id="date-updated"></span>
+  </footer>
+
+</body>
+
+</html>

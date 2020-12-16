@@ -1,0 +1,189 @@
+@media only screen and (min-width: 42em) {
+
+    /* ------------------------------- HOME PAGE & COMMON STYLING CSS ------------------------------- */
+    .alerts {
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .alerts span:nth-of-type(1) {
+        grid-column: 1/3;
+    }
+
+    .alerts span:nth-of-type(2) {
+        grid-row: 2/3;
+        justify-self: right;
+        margin: 0 15px;
+    } 
+    
+    .alerts span:nth-of-type(3) {
+        grid-row: 2/3;
+        justify-self: left;
+        margin: 0 15px;
+    }
+    
+    #logo {
+        max-width: 7em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    #menu-button {
+        padding: 0 1.25em;
+    }
+
+    .rental-summary {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .rental-summary img {
+        display: block;
+    }
+    
+    .rental-summary > div {
+        display: initial;
+    }
+
+    .rental-summary > div:nth-of-type(1) {
+        border: 5px ridge #040F16;
+        margin-right: .67em;
+    }
+
+    .rental-summary > div:nth-of-type(2) {
+        border: 5px ridge #040F16;
+        margin: 0 .33em;
+    }
+
+    .rental-summary > div:nth-of-type(3) {
+        border: 5px ridge #040F16;   
+        margin-left: .67em;     
+    }
+
+    .rental-summary > div div {
+        height: 120px;
+        text-align: center;
+    }
+
+    .rental-summary > div:nth-of-type(2) div {
+        text-align: center;
+    }
+
+    .weather div {
+        line-height: 2.25em;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h2.map-title {
+        display: block;
+        grid-column: 1/2;
+    }
+
+    h2.contact-title {
+        grid-column: 2/3;
+    }
+
+    .map {
+        display: block;
+        border: 5px solid #040F16;
+        padding-top: 1em;
+        margin-right: .5em;
+    }
+
+    .map iframe {
+        height: 100%;
+        width: 100%;
+    }
+
+    .contact-info {
+        margin-left: .5em;
+        height: 224px;
+    }
+
+    /* ------------------------------- RENTALS PAGE CSS ------------------------------- */
+    .rental-details h3 {
+        margin: 32px 0 .5em;
+        font-size: 1.4em;
+        text-shadow: 0 0 10px #F5CF87;
+    }
+    
+    .rental-details p {
+        margin: 0 32px 32px;
+        font-size: 1.05em;
+    }
+    
+    .rental-details img {
+        float: left;
+        max-width: 50%;
+        margin: 2em;
+        box-shadow: 5px 5px 10px 5px #040F1699;
+    }
+    
+    .rental-details:nth-of-type(odd) img {
+        box-shadow: -5px 5px 10px 5px #040F1699;
+    }
+
+    .rental-details:nth-of-type(even) img {
+        float: right;
+    }
+
+    .rental-details:nth-of-type(even) h3, .rental-details:nth-of-type(even) p {
+        text-align: right;
+    }
+    
+    .table-hide {
+        display: table-cell
+    }
+    
+    /* ------------------------------- RESERVATIONS PAGE CSS ------------------------------- */    
+    form textarea.comments {
+        height: 200px;
+        min-width: 96%;
+    }
+
+    input.submit {
+        margin: 0 .5em;
+    }
+    
+    /* ------------------------------- TOURS PAGE CSS ------------------------------- */
+    .tour-grid img {
+        float: left;
+        margin: .5em 3em .5em 2em;
+        box-shadow: -5px 5px 10px 5px #040F1699;
+    }
+    
+    /* ------------------------------- CONTACT PAGE CSS ------------------------------- */
+    .contact-map {
+        min-height: 500px;
+    }
+
+    .contact-map iframe {
+        min-height: 500px;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .contact-grid .contact {
+        display: block;
+    }
+
+    .contact-grid div.contact-form {
+        min-height: 224px;
+        margin: 0 .5em 0 0;
+    }
+
+    .contact-grid div.contact-info {
+        margin: 0 0 0 .5em;
+    }
+}

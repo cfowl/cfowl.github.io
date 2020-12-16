@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Chris Fowler">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots | Chris Fowler</title>
+    <meta name="description" content="~Scoots home page for Chris Fowler's WDD230 Final Project; Web Design and Development I. This is for the Fall 2020 semester at Brigham Young University-Idaho (BYUI).">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Combo&family=Comfortaa&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer></script>
+    <script src="js/webfontload.js" defer></script>
+    <script src="js/dates.js" defer></script>
+    <script src="js/menu.js" defer></script>
+</head>
+
+<body>
+
+  <header class="clearfix">
+    <a href="index.html"><img id="logo" src="images/logo.png" alt="~Scoots Logo"></a>
+      <h1>Scoots4Fun</h1>
+      <button id="menu-button" onclick="toggleNav()">MENU</button>
+  </header>
+
+  <nav>
+    <ul class="menu-show">
+      <li><a href="index.html">Home</a> </li>
+      <li><a href="rentals.html">Rentals</a></li>
+      <li class="active"><a href="#">Reservations</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="hero-div">
+      <picture>
+        <source media="(max-width: 500px)" srcset="images/reserve-hero500.jpg">
+        <source media="(max-width: 800px)" srcset="images/reserve-hero800.jpg">
+        <img class="hero-img" src="images/reserve-hero1280.jpg" alt="Wooden one-way sign on sandy road">
+      </picture>
+      <a id="call2action" href="#reserve">Reserve Your ~Scooter Now</a>  <!-- GOES TO PART OF PAGE BELOW!! -->
+    </div>
+
+    <h2>Reservations</h2>
+
+    <section class="info-services">
+      <h3>Information and Services</h3>
+      <ul>
+        <li>A $50 security deposit is required to confirm reservations.</li>
+        <li>A valid drivers license is required in hand at time of rental.</li>
+        <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+        <li>Fuel charge not included.</li>
+        <li>Unlimited mileage.</li>
+        <li>Liability insurance is free of charge.</li>
+        <li>Reservations rate requires 24 hour prior notification.</li>
+        <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+        <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+        <li>Rentals may be returned to either location.</li>
+      </ul>
+    </section>
+
+    <h2 id="reserve">Make a Reservation</h2>
+
+    <form method="GET" action="thanks.html">
+      <fieldset>
+        <legend>Rental Information</legend>
+        <!-- Vehicle Type -->
+        <label class="top">Rental Type
+          <select name="vehicle" required>
+            <option value="" selected disabled>Select Vehicle ...</option>
+            <option value="Metro">~Honda Metro Scooter</option>
+            <option value="Dio">~Honda Dio Scooter</option>
+            <option value="PCX150">~Honda PCX150 Scooter</option>
+            <option value="Pioneer">Honda Pioneer ATV</option>
+            <option value="Jeep4">Jeep Wrangler 4-door</option>
+            <option value="Jeep2">Jeep Wrangler 2-door</option>
+          </select>
+        </label>
+        <!-- Reservation Date -->
+        <label class="top">Rental Date <input type="date" name="date" required></label>
+        <!-- Half/Full Day ?? -->
+        <div><h4>Rental Duration</h4>
+          <label class="sbs"><input type="radio" name="duration" required> 3 Hours</label>
+          <label class="sbs"><input type="radio" name="duration" checked required> One Full Day</label>
+          <label class="sbs"><input type="radio" name="duration" required> Two Full Days (free delivery)</label>
+          <label class="sbs"><input type="radio" name="duration" required> Three Full Days (free delivery)</label>
+        </div>
+        <!-- Group Size -->
+        <label class="sbs num-people">Number of People
+          <input type="number" min="1" max="5" value="" name="people" required>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment Information</legend>
+        <!-- Customer Name -->
+        <label class="top">Full Name* <input type="text" name="name" pattern="[a-zA-Z ]{5,}" title="First Last (capitalized first letters)" required></label>
+        <!-- Customer Email Address -->
+        <label class="top">Email <input type="email" name="email" placeholder="example@email.com" required></label>
+        <!-- Customer Phone Number -->
+        <label class="top">Phone Number* <input type="tel" name="phone" required></label>
+        <!-- Credit Card Number -->
+        <label class="top">Card Number* <input type="number" name="credit-card" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Additional Info</legend>
+        <!-- Country -->
+        <label class="top">Country/State <input type="text" name="country"></label>
+        <!-- Cruiseline -->
+        <label class="top">Cruise Line <input list="lines" name="cruise-line">
+          <datalist id="lines">
+            <option value="Carnival Cruise Line"></option>
+            <option value="Celebrity Cruises"></option>
+            <option value="Disney Cruise Line"></option>
+            <option value="Norwegian Cruise Line"></option>
+            <option value="Princess Cruises"></option>
+            <option value="Royal Carribean Cruises"></option>
+            <option value="Virgin Voyages"></option>
+          </datalist>
+        </label>
+        <!-- Comments & Requests -->
+        <label class="top">Comments & Special Accomodations <textarea class="comments" name="extra"></textarea></label>
+    </fieldset>
+      <!-- Submit Button -->
+      <input class="submit" type="submit" value="Reserve Now">
+    </form>
+
+    <section class="contact">
+      <h2 class="map-title">Map Info</h2>
+      <h2 class="contact-title">Contact Info</h2>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d119605.44832277119!2d-86.9677616866935!3d20.478732117888974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPlaya%20del%20Carmen-Cozumel%20Ferry%20dock!5e0!3m2!1sen!2sus!4v1608083609841!5m2!1sen!2sus" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="contact-info">
+        <p>&#x2691; Av. Rafael E. Melgar, Centro,<br>Cozumel, Mexico 77600</p>
+        <p>&#x260e; +52-987-853-0075</p>
+        <p>&#x2709; ~scoots@4fun.com</p>
+        <a href="https://www.instagram.com" target="blank"><img src="images/instagram.png" alt="Instagram Link Logo"></a>
+        <a href="https://www.facebook.com" target="blank"><img src="images/facebook.png" alt="Facebook Link Logo"></a>
+        <a href="https://www.youtube.com" target="blank"><img src="images/youtube.png" alt="YouTube Link Logo"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+      <span id="copyright"></span>
+      <span>Chris Fowler</span>
+      <span class="separate"> | </span>
+      <span><a href="attributions.html" target="blank">Attributions</a></span>
+      <span class="separate"> | </span>
+      <span id="date-updated"></span>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+{
+    "vehicle": [
+        
+        {
+            "model": "~Honda Metro Scooter",
+            "people": "1",
+            "reservation_3hr": "$20",
+            "reservation_full": "$30",
+            "walkin_3hr": "$25",
+            "walkin_full": "$35"
+        },
+        
+        {
+            "model": "~Honda Dio Scooter",
+            "people": "2",
+            "reservation_3hr": "$30",
+            "reservation_full": "$40",
+            "walkin_3hr": "$35",
+            "walkin_full": "$45"
+        },
+        
+        {
+            "model": "~Honda PCX150 Scooter",
+            "people": "2",
+            "reservation_3hr": "$40",
+            "reservation_full": "$50",
+            "walkin_3hr": "$45",
+            "walkin_full": "$55"
+        },
+        
+        {
+            "model": "Honda Pioneer ATV",
+            "people": "4",
+            "reservation_3hr": "$50",
+            "reservation_full": "$70",
+            "walkin_3hr": "$60",
+            "walkin_full": "$80"
+        },
+        
+        {
+            "model": "Jeep Wrangler - 4 door with a/c",
+            "people": "5",
+            "reservation_3hr": "$70",
+            "reservation_full": "$100",
+            "walkin_3hr": "$85",
+            "walkin_full": "$125"
+        },
+        
+        {
+            "model": "Jeep Wrangler - 2 door",
+            "people": "4",
+            "reservation_3hr": "$60",
+            "reservation_full": "$85",
+            "walkin_3hr": "$70",
+            "walkin_full": "$90"
+        }
+    ]
+ }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Chris Fowler">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots | Chris Fowler</title>
+    <meta name="description" content="~Scoots home page for Chris Fowler's WDD230 Final Project; Web Design and Development I. This is for the Fall 2020 semester at Brigham Young University-Idaho (BYUI).">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Combo&family=Comfortaa&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer></script>
+    <script src="js/webfontload.js" defer></script>
+    <script src="js/dates.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/weather-api.js" defer></script>
+</head>
+
+<body>  
+  <span class="alerts"></span>
+
+  <header class="clearfix">
+      <a href="index.html"><img id="logo" src="images/logo.png" alt="~Scoots Logo"></a>
+      <h1>Scoots4Fun</h1>
+      <button id="menu-button" onclick="toggleNav()">MENU</button>
+  </header>
+
+  <nav>
+    <ul class="menu-show">
+      <li class="active"><a href="#">Home</a> </li>
+      <li><a href="rentals.html">Rentals</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="hero-div">
+      <picture>
+        <source media="(max-width: 500px)" srcset="images/hero500.jpg">
+        <source media="(max-width: 800px)" srcset="images/hero800.jpg">
+        <img class="hero-img" src="images/hero1280.jpg" alt="Customers on the beach with ~Scoots Jeep">
+      </picture>
+      <a id="call2action" href="reservations.html">Reserve Your ~Scooter Now</a>
+    </div>
+
+    <section class="rental-summary">
+      <h2>Rental Summary</h2>
+      <div>
+        <div>
+          <h2>Scooter</h2>
+          <p>3 options to choose from! 1-2 riders, $20-$55</p>
+        </div>
+        <img src="images/scooter-sum.jpg" alt="Scooter">
+      </div>
+      <div>
+        <div>
+          <h2>Jeep</h2>
+          <p>Jeep Wrangler, 4-door or 2-door, $60-$125</p>
+        </div>
+        <img src="images/jeep-sum.jpg" alt="Jeep">
+      </div>
+      <div>
+        <div>
+          <h2>ATV</h2>
+          <p>Pioneer ATV, 4-person, $50-$80</p>
+        </div>
+        <img src="images/atv-sum.jpg" alt="ATV">
+      </div>
+    </section>
+
+    <div class="weather-grid">
+      <section class="weather">
+        <h2>Current Weather</h2>
+        <div>
+          <span id="description"></span><br>
+          <span id="temperature"></span><br>
+          <span id="humidity"></span>
+        </div>
+      </section>
+
+      <section class="forecast">
+        <h2>3-Day Forecast</h2>
+      </section>
+    </div>
+
+    <section class="contact">
+      <h2 class="map-title">Map Info</h2>
+      <h2 class="contact-title">Contact Info</h2>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d181098.67325928548!2d-86.9969786027839!3d20.44172599195744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scozumel!5e0!3m2!1sen!2sus!4v1607898264241!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="contact-info">
+        <p>&#x2691; Av. Rafael E. Melgar, Centro,<br>Cozumel, Mexico 77600</p>
+        <p>&#x260e; +52-987-853-0075</p>
+        <p>&#x2709; ~scoots@4fun.com</p>
+        <a href="https://www.instagram.com" target="blank"><img src="images/instagram.png" alt="Instagram Link Logo"></a>
+        <a href="https://www.facebook.com" target="blank"><img src="images/facebook.png" alt="Facebook Link Logo"></a>
+        <a href="https://www.youtube.com" target="blank"><img src="images/youtube.png" alt="YouTube Link Logo"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+      <span id="copyright"></span>
+      <span>Chris Fowler</span>
+      <span class="separate"> | </span>
+      <span><a href="attributions.html" target="blank">Attributions</a></span>
+      <span class="separate"> | </span>
+      <span id="date-updated"></span>
+  </footer>
+
+</body>
+
+</html>

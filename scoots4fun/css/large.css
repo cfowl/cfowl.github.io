@@ -1,0 +1,101 @@
+@media only screen and (min-width: 64em) {
+
+    /* ------------------------------- HOME PAGE AND COMMON STYLING CSS ------------------------------- */
+    .alerts {
+        display: block;
+    }
+
+    #logo {
+        max-width: 10em;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    nav a {
+        padding: 1em;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    .menu-show {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .menu-show li {
+        display: block;
+        background-color: #040F16;
+    }
+
+    .menu-show li:hover {
+        background-color: #F5CF87;
+    }
+
+    .menu-show li:hover a {
+        color: #040F16;
+        font-weight: bold;
+    }
+
+    .menu-show .active:hover {
+        background-color: #040F16;
+    }
+
+    .menu-show .active a {
+        color: #AA87F5;
+        font-weight: bolder;
+    }
+
+    .menu-show .active:hover a {
+        color: #AA87F5;
+    }
+
+    .menu-show li a {
+        color: #FFB938;
+        text-decoration: none;
+    }
+
+    body {
+        position: relative;
+    }
+
+    #call2action {
+        position: absolute;
+        top: 64px;
+        right: 25px;
+        font-size: 1.2em;
+    }
+
+    .weather-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+
+    .weather div {
+        height: 140px;
+        line-height: 3em;
+    }
+
+    /* ------------------------------- RESERVATIONS PAGE CSS ------------------------------- */  
+    input[type="radio"] {
+        transform: scale(1);
+    }
+
+    form textarea.comments {
+        height: 300px;
+        min-width:97.5%;
+    }
+    
+    /* ------------------------------- CONTACT PAGE CSS ------------------------------- */
+    .contact-map {
+        min-height: 600px;
+    }
+
+    .contact-map iframe {
+        min-height: 600px;
+    }
+}

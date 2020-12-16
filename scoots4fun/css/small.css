@@ -1,0 +1,545 @@
+/* ------------------------------- HOME PAGE & COMMON STYLING CSS ------------------------------- */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.alerts-show {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+    background-color: #040F16;
+    color: #FFB938;
+    padding: .75em;
+    border-bottom: 5px groove #3481ED;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
+main {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #040F16;
+    color: #F5CF87;
+}
+
+header {
+    font-family: 'Combo', cursive;
+    padding: 1em;
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    border-bottom: 5px ridge #3481ED;
+}
+
+#logo {
+    max-width: 5em;
+}
+
+h1 {
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 1.5em;
+}
+
+#menu-button {
+    padding: .5em;
+    margin: 1em 0;
+}
+
+.menu-show {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-show li {
+    display: none;
+}
+
+.nav-show li {
+    display: block;
+    background-color: #040F16;
+}
+
+.nav-show .active a {
+    color: #AA87F5;
+    font-weight: bold;
+}
+
+.nav-show li a {
+    color: #FFB938;
+    text-decoration: none;
+}
+
+.nav-show .active:hover {
+    background-color: #040F16;
+    color: #AA87F5;
+}
+
+.nav-show .active:hover a {
+    color: #AA87F5;
+}
+
+.nav-show li:hover {
+    background-color: #F5CF87;
+}
+
+.nav-show li:hover a {
+    font-weight: bold;
+    color: #040F16;
+}
+
+/* FIXES SMALL MARGIN AT BOTTOM WHEN WRAPPED INSIDE <picture> */
+.hero-img {
+    display: block;
+}
+
+#call2action {
+    border: 5px ridge #3481ED;
+    padding: 1em;
+    background-color: #FFB938;
+    color: #040F16;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    box-shadow: 0 0 10px 5px #3481ED99;
+}
+
+#call2action:hover {
+    border: 5px ridge #AA87F5;
+    background-color: #040F16;
+    color: #FFB938;
+}
+
+.rental-summary {
+    text-align: center;
+}
+
+.rental-summary > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    border: 5px ridge #040F16;
+}
+
+.rental-summary > div:nth-of-type(1), .rental-summary > div:nth-of-type(2) {
+    border-bottom: none;
+}
+
+.rental-summary > div h2 {
+    margin: .25em 0;
+}
+
+.rental-summary > div p {
+    margin: 0;
+}
+
+.rental-summary > div div {
+    background-color: #F5CF8799;
+    padding: .75em 1.25em .75em .75em;
+    text-align: right;
+}
+
+.rental-summary img {
+    display: block;
+}
+
+.rental-summary > div:nth-of-type(2) img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.rental-summary > div:nth-of-type(2) div {
+    grid-column: 2/3;
+    padding: .75em .75em .75em 1.25em;
+    text-align: left;
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather div {
+    padding: .75em;
+    font-weight: bold;
+    line-height: 1.75em;
+}
+
+.weather div span:nth-of-type(1) {
+    text-transform: capitalize;
+}
+
+.forecast {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.forecast p {
+    font-weight: bold;
+}
+
+.rental-summary h2, .weather h2, .forecast h2, .contact h2 {
+    grid-column: 1/span 3;
+    margin: 1em 0 .1em 0;
+}
+
+.weather div, .forecast div {
+    border: 5px solid #040F16;
+    background-color: #AA87F599;
+}
+
+.forecast div:nth-of-type(1), .forecast div:nth-of-type(2) {
+    border-right: none;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact div {
+    border: 5px solid #040F16;
+    background-color: #3481ED99;
+    color: #040F16;
+    font-weight: bold;
+    padding: 1em;
+}
+
+.map, .map-title {
+    display: none;
+}
+
+footer {
+    margin-top: 1.5em;
+    padding: 2em;
+    text-align: center;
+}
+
+footer a {
+    color: #F5CF87;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* ------------------------------- RENTALS PAGE CSS ------------------------------- */
+#rentals-table {
+    margin: 1.5em auto 0;
+    text-align: center;
+}
+
+#table-caption {
+    font-size: 1.20em;
+    font-weight: bold;
+    background-color: #040F16;
+    color: #F5CF87;
+    padding: .75em;
+}
+
+th {
+    background-color: #AA87F599;
+    color: #040F16;
+}
+
+tr > td:first-child {
+    font-weight: bold;
+}
+
+#rentals-table, th, tr, td {
+    border: 5px ridge #3481ED;
+    border-collapse: collapse;
+    padding: .5em;
+}
+
+/* hides last two columns of table for small view */
+.rental-details {
+    border: 5px ridge #040F16;
+    margin-top: 1.5em;
+    background-color: #F5CF8799;
+}
+
+.rental-details h3 {
+    margin: 32px 32px .25em;
+    font-size: 1.4em;
+    text-shadow: 0 0 10px #F5CF87;
+}
+
+.rental-details p {
+    margin: 0 32px 32px;
+    font-size: 1.05em;
+}
+
+.rental-details img {
+    display: block;
+    max-width: 84%;
+    margin: 32px auto;
+}
+
+.rental-details a {
+    color: #3481ED;
+}
+
+.table-hide {
+    display: none;
+}
+
+/* ------------------------------- RESERVATIONS PAGE CSS ------------------------------- */
+.info-services {
+    color: #040F16;
+}
+
+.info-services h3 {
+    margin: 24px 0 2.4px;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.info-services ul {
+    display: table;
+    margin: 0 auto;
+    padding: 1em;
+    border: 5px ridge #040F16;
+    background-color: #AA87F599;
+    font-weight: bold;
+    max-width: 96%;
+}
+
+.info-services ul li {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+#reserve {
+    margin: 24px 0 2.4px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+    color: #040F16;
+}
+
+form fieldset {
+    margin: 0 0 24px;
+    border: 5px ridge #040F16;
+    border-radius: 7px;
+    padding: .5em .4em .75em .4em;
+}
+
+form fieldset:hover {
+    border: 5px ridge #040F1699;
+}
+
+form legend {
+    color: #FFB938;
+    text-shadow: 1px 1px 1px #040F16;
+    font-size: 1.15em;
+    margin: 0 1em;
+    padding: 0 .5em;
+}
+
+form label.top, form div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+}
+
+form div {
+    padding-top: 2em;
+}
+
+form div h4 {
+    margin: 0 0 -.5em 0;
+}
+
+form label.sbs {
+    display: flex;
+    margin-top: 1em;
+    padding: .40em 0;
+    color: #040F16;
+}
+
+.num-people input {
+    padding: .5em;
+    margin: -.6em 0 0 1em;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    margin: auto .5em auto .2em;
+}
+
+form label.top input, form label.top select, form textarea {
+    font-size: 1em;
+    border: solid 1px #50514f;
+    border-radius: 4px;
+    padding: .75em;
+    color: #50514f;
+    width: 100%;
+    max-width: 20em;
+    background-color: rgba(0,0,0,.05);
+}
+
+input.submit {
+    border: none;
+    background-color: #AA87F599;
+    color: #040F16;
+    font-size: 1.25em;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 1em 1.25em;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 20em;
+    box-shadow: 0 0 10px 1px #040F16;
+    border: 5px ridge #040F16;
+}
+
+form input.submit:hover {
+    background-color: #AA87F5;
+    box-shadow: 0 0 10px 1px #040F1699;
+}
+
+form label.top input:required, form label.sbs input:required, form label.top select:required {
+    border-left: 5px ridge #FFB938;
+    overflow: hidden;
+}
+
+form label.top input:required:valid, form label.sbs input:required:valid, form label.top select:required:valid {
+    border-left: 5px ridge #3481ED;
+    overflow: hidden;
+}
+
+form textarea.comments {
+    height: 100px;
+}
+
+p.thanks {
+    text-align: center;
+}
+
+/* ------------------------------- TOURS PAGE CSS ------------------------------- */
+.attractions-title, .history-title {
+    text-align: center;
+    margin: 1em 0 .1em;
+}
+
+.attractions-info, .history-info {
+    border: 5px ridge #040F16;
+    background-color: #F5CF8799;
+    padding: 1em;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.tour-grid img {
+    display: block;
+    margin: 0 auto;
+}
+
+.attractions-info a {
+    color: #040F16;
+    text-decoration: none;
+}
+
+.attractions-info ul {
+    padding: 0;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.attractions-info ul li {
+    margin: .75em 0;
+}
+
+.attractions-info a:hover {
+    color: #3481ED;
+    text-decoration: none;
+}
+
+.history-info {
+    color: #040F16;
+    line-height: 1.35em;
+}
+
+.history-info a {
+    color: #3481ED;
+}
+
+/* ------------------------------- CONTACT PAGE CSS ------------------------------- */
+h2.contact-map-title {
+    margin: 1em 0 .1em;
+}
+
+.contact-map {
+    display: block;
+    padding: 1em 1em .75em;
+    border: 5px solid #040F16;
+    background-color: #3481ED99;
+    min-height: 400px;
+}
+
+.contact-map iframe {
+    min-height: 400px;;
+    width: 100%;
+}
+
+.contact-form, .portrait-div {
+    height: 720px;
+    min-height: 720px;
+}
+
+.contact-form {
+    text-align: left;
+    display: block;
+}
+
+.contact-form legend {
+    color: #040F16;
+    text-shadow: none;
+}
+
+.contact-form .small-input {
+    max-width: 88.5%;
+}
+
+.contact-form .small-input input {
+    background-color: white;
+}
+
+.contact-form textarea.comments {
+    min-height: 330px;
+    min-width: 230px;
+    max-width: 90%;
+    background-color: #EEE
+}
+
+.portrait-div figcaption {
+    color: #040F1699;
+}

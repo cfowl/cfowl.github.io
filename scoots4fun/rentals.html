@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Chris Fowler">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots | Chris Fowler</title>
+    <meta name="description" content="~Scoots home page for Chris Fowler's WDD230 Final Project; Web Design and Development I. This is for the Fall 2020 semester at Brigham Young University-Idaho (BYUI).">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Combo&family=Comfortaa&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer></script>
+    <script src="js/webfontload.js" defer></script>
+    <script src="js/dates.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/rentals.js" defer></script>
+</head>
+
+<body>
+
+  <header class="clearfix">
+    <a href="index.html"><img id="logo" src="images/logo.png" alt="~Scoots Logo"></a>
+      <h1>Scoots4Fun</h1>
+      <button id="menu-button" onclick="toggleNav()">MENU</button>
+  </header>
+
+  <nav>
+    <ul class="menu-show">
+      <li><a href="index.html">Home</a> </li>
+      <li class="active"><a href="#">Rentals</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="hero-div">
+      <picture>
+        <source media="(max-width: 500px)" srcset="images/rentals-hero500.jpg">
+        <source media="(max-width: 800px)" srcset="images/rentals-hero800.jpg">
+        <img class="hero-img" src="images/rentals-hero1280.jpg" alt="Customers on the beach with ~Scoots Scooters">
+      </picture>
+      <a id="call2action" href="reservations.html">Reserve Your ~Scooter Now</a>
+    </div>
+
+    <h2>Rentals</h2>
+
+    <table id="rentals-table">
+      <thead>
+        <tr>
+          <th id="table-caption" colspan="6">Max Persons and Price Chart (includes Tax)</th>
+        </tr>
+        <tr>
+          <th colspan="2"></th>
+          <th colspan="2" class="table-hide">Reservation</th>
+          <th colspan="2">Walk-In</th>
+        </tr>
+        <tr>
+          <th>Rental Type</th>
+          <th>Max People</th>
+          <th class="table-hide">Half Day (3 hrs)</th>
+          <th class="table-hide">Full Day</th>
+          <th>Half Day (3 hrs)</th>
+          <th>Full Day</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <section class="rental-details clearfix">
+      <img src="images/metro.jpg" alt="Honda Metropolitan Scooter">
+      <h3>~Honda Metro Scooter</h3>
+      <p>The Honda Metropolitan Scooter is a 49cc option that is best for solo riders. It is our smallest option, offering the best gas mileage and the most versatility. Featuring an automatic V-Matic belt drive transmission and a telescopic front suspension that will set any inexperienced rider at ease.
+      <br><br>According to <a href="https://powersports.honda.com/street/scooter/metropolitan" target="blank">powersports.Honda.com</a>, "The Honda Metropolitan is a time-saver with timeless style and all the modern innovations. It starts with one of Honda’s famously reliable four-stroke engines, a no-shift automatic transmission, and remarkable fuel efficiency. There’s also an electric starter, underseat storage and way more. Take a ride and you’ll see how the Metropolitan can add some time, gas money, and fun, back into your day."</p>
+    </section>
+    <section class="rental-details clearfix">
+      <img src="images/dio.jpg" alt="Honda Dio Scooter">
+      <h3>~Honda Dio Scooter</h3>
+      <p>The Honda Dio Scooter is a 110cc option that is best for solo riders or couples. It is our midsize option, offering the great gas mileage yet with more style. Featuring an automatic V-Matic transmission and a combined braking system, there is nothing to worry about besides the adventure that awaits you.
+      <br><br>According to <a href="https://en.wikipedia.org/wiki/Honda_Dio" target="blank">Wikipedia.org</a>, "In 2020, Honda launched an all-new revamped version of the Dio, complying with Bharat Standard – VI (BS-VI) Emission regulations and with the addition of programmed fuel-injection system. The top-of-the-line Dio Deluxe (introduced in 2018) has been retained with redesigned full digital speedometer and power seats. A Repsol Edition based on the Dio Deluxe was introduced in November 2020."</p>
+    </section>
+    <section class="rental-details clearfix">
+      <img src="images/pcx.jpg" alt="Honda PCX Scooter">
+      <h3>~Honda PCX150 Scooter</h3>
+      <p>The Honda PCX150 Scooter is a 149cc option that is best for solo riders and couples. As our largest option it has pep to its step and plenty of style to boot.
+      <br><br>According to <a href="https://powersports.honda.com/street/scooter/pcx150" target="blank">powersports.Honda.com</a>, "Urban riding is full of challenges. There’s heavy traffic, tight parking and plenty of stoplight-to-stoplight action. Fortunately, the Honda PCX150 is purpose-built to tackle these challenges and deliver loads of fun along the way. With our V-Matic transmission, you get start-up-and-go riding without ever needing to shift. The 2.1 gallon fuel tank and stellar fuel economy saves you money with fewer stops to fill up. And the sporty ride characteristics means you – and your passenger – can always find an excuse to hop on and ride. So conquer your city in style, on the sleek and swift PCX150."</p>
+    </section>
+    <section class="rental-details clearfix">
+      <img src="images/pioneer.jpg" alt="Honda Pioneer ATV">
+      <h3>Honda Pioneer ATV</h3>
+      <p>The Honda Pioneer ATV is best for couples and groups of up to 4 people. Feel the wind in your face with the open cab and powerful engine. The Honda Pioneer boasts a powerful 999cc twin-cylinder engine that leaves all the power at the tip of your fingers.
+      <br><br>According to <a href="https://powersports.honda.com/sxs/recutility/pioneer-1000" target="blank">powersports.Honda.com</a>, "The Pioneer 1000 Limited Edition showcases our exclusive i-4WD system. Think “I” for “Intelligent,” because that’s exactly what it is. An industry-first brake-traction control system for side-by-sides, it simplifies operation, increases drivability and optimizes traction. Using proven, advanced technology from Honda’s automotive division, you get the benefits associated with a locked front differential with none of the downsides."</p>
+    </section>
+    <section class="rental-details clearfix">
+      <img src="images/jeep4.jpg" alt="Jeep Wrangler - 4 door">
+      <h3>Jeep Wrangler - 4 door with a/c</h3>
+      <p>The 4-door Jeep Wrangler is the best option for large groups (up to five), or someone looking for the comfort of an ice cold a/c. It features a manual transmission giving you more control. A touch screen interface will connect will all your newest gadgets, allowing you to use GPS or rock out to your favorite tunes.
+      <br><br>According to <a href="https://www.jeep.com/wrangler.html" target="blank">Jeep.com</a>, "The 2021 Jeep® Wrangler doesn’t back down from a challenge, which is why it’s the Most Capable Wrangler Generation Ever. The Wrangler combines 80 years of revolutionary off-road expertise and innovation with a history of 4x4 capability. Every 2021 Jeep Wrangler proudly wears the Trail Rated® badge, so you’re ready to explore places that others wouldn’t dare."</p>
+    </section>
+    <section class="rental-details clearfix">
+      <img src="images/jeep2.jpg" alt="Jeep Wrangler - 2 door">
+      <h3>Jeep Wrangler - 2 door</h3>
+      <p>The 2-door Jeep Wrangler is best for couples and group up to four people. You will get a first row seat to the adventure that awaits with a removeable soft-top. It features impressive off-road capability as well as on-road manueverability.
+      <br><br>According to <a href="https://www.cars.com/research/jeep-wrangler-2020/" target="blank">Cars.com</a>, "While it has a rugged image, available comfort features include heated front seats, a heated steering wheel and an 8.4-inch touchscreen multimedia system that includes Apple CarPlay and Android Auto smartphone connectivity. The Wrangler Unlimited offers more towing capability than the two-door variant, and the diesel V-6 should make the task easier even if it doesn’t increase the Unlimited’s 3,500-pound towing capacity."</p>
+    </section>
+
+    <section class="contact">
+      <h2 class="map-title">Map Info</h2>
+      <h2 class="contact-title">Contact Info</h2>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d119605.44832277119!2d-86.9677616866935!3d20.478732117888974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPlaya%20del%20Carmen-Cozumel%20Ferry%20dock!5e0!3m2!1sen!2sus!4v1608083609841!5m2!1sen!2sus" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="contact-info">
+        <p>&#x2691; Av. Rafael E. Melgar, Centro,<br>Cozumel, Mexico 77600</p>
+        <p>&#x260e; +52-987-853-0075</p>
+        <p>&#x2709; ~scoots@4fun.com</p>
+        <a href="https://www.instagram.com" target="blank"><img src="images/instagram.png" alt="Instagram Link Logo"></a>
+        <a href="https://www.facebook.com" target="blank"><img src="images/facebook.png" alt="Facebook Link Logo"></a>
+        <a href="https://www.youtube.com" target="blank"><img src="images/youtube.png" alt="YouTube Link Logo"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+      <span id="copyright"></span>
+      <span>Chris Fowler</span>
+      <span class="separate"> | </span>
+      <span><a href="attributions.html" target="blank">Attributions</a></span>
+      <span class="separate"> | </span>
+      <span id="date-updated"></span>
+  </footer>
+
+</body>
+
+</html>
