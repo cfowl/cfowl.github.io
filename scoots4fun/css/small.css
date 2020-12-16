@@ -540,6 +540,7 @@ h2.contact-map-title {
     background-color: #EEE
 }
 
-.portrait-div figcaption {
+.portrait-div .figcaption {
     color: #040F1699;
+    margin: 0;
 }
