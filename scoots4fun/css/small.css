@@ -1,3 +1,7 @@
+#attributions {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* ------------------------------- HOME PAGE & COMMON STYLING CSS ------------------------------- */
 .clearfix::after {
     content: "";
