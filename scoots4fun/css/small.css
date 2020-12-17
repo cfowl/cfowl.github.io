@@ -273,6 +273,10 @@ form textarea {
     display: none;
 }
 
+#date-updated {
+    display: block;
+}
+
 /* ------------------------------- RENTALS PAGE CSS ------------------------------- */
 #rentals-table {
     margin: 1.5em auto 0;

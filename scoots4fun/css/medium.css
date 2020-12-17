@@ -113,6 +113,10 @@
         display: initial;
     }
 
+    #date-updated {
+        display: inline;
+    }
+
     /* ------------------------------- RENTALS PAGE CSS ------------------------------- */
     .rental-details h3 {
         margin: 32px 0 .5em;
