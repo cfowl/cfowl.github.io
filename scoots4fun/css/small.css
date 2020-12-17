@@ -233,6 +233,10 @@ nav a {
     padding: 1em;
 }
 
+.contact-info img {
+    margin: auto .5em;
+}
+
 .map, .map-title {
     display: none;
 }
