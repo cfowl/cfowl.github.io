@@ -269,6 +269,10 @@ form textarea {
     border: 1px solid #040F16;
 }
 
+.separate {
+    display: none;
+}
+
 /* ------------------------------- RENTALS PAGE CSS ------------------------------- */
 #rentals-table {
     margin: 1.5em auto 0;

@@ -109,6 +109,10 @@
         border: 1px solid #040F16;
     }
 
+    .separate {
+        display: initial;
+    }
+
     /* ------------------------------- RENTALS PAGE CSS ------------------------------- */
     .rental-details h3 {
         margin: 32px 0 .5em;
