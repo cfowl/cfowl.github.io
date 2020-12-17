@@ -69,46 +69,49 @@
     <h2 id="reserve">Make a Reservation</h2>
 
     <form method="GET" action="thanks.html">
-      <fieldset>
-        <legend>Rental Information</legend>
-        <!-- Vehicle Type -->
-        <label class="top">Rental Type
-          <select name="vehicle" required>
-            <option value="" selected disabled>Select Vehicle ...</option>
-            <option value="Metro">~Honda Metro Scooter</option>
-            <option value="Dio">~Honda Dio Scooter</option>
-            <option value="PCX150">~Honda PCX150 Scooter</option>
-            <option value="Pioneer">Honda Pioneer ATV</option>
-            <option value="Jeep4">Jeep Wrangler 4-door</option>
-            <option value="Jeep2">Jeep Wrangler 2-door</option>
-          </select>
-        </label>
-        <!-- Reservation Date -->
-        <label class="top">Rental Date <input type="date" name="date" required></label>
-        <!-- Half/Full Day ?? -->
-        <div><h4>Rental Duration</h4>
-          <label class="sbs"><input type="radio" name="duration" required> 3 Hours</label>
-          <label class="sbs"><input type="radio" name="duration" checked required> One Full Day</label>
-          <label class="sbs"><input type="radio" name="duration" required> Two Full Days (free delivery)</label>
-          <label class="sbs"><input type="radio" name="duration" required> Three Full Days (free delivery)</label>
-        </div>
-        <!-- Group Size -->
-        <label class="sbs num-people">Number of People
-          <input type="number" min="1" max="5" value="" name="people" required>
-        </label>
-      </fieldset>
+      <div class="form-flex">
+        <fieldset>
+          <legend>Rental Information</legend>
+          <!-- Vehicle Type -->
+          <label class="top">Rental Type
+            <select name="vehicle" required>
+              <option value="" selected disabled>Select Vehicle ...</option>
+              <option value="Metro">~Honda Metro Scooter</option>
+              <option value="Dio">~Honda Dio Scooter</option>
+              <option value="PCX150">~Honda PCX150 Scooter</option>
+              <option value="Pioneer">Honda Pioneer ATV</option>
+              <option value="Jeep4">Jeep Wrangler 4-door</option>
+              <option value="Jeep2">Jeep Wrangler 2-door</option>
+            </select>
+          </label>
+          <!-- Reservation Date -->
+          <label class="top">Rental Date <input type="date" name="date" required></label>
+          <!-- Half/Full Day ?? -->
+          <div><h4>Rental Duration</h4>
+            <label class="sbs"><input type="radio" name="duration" required> 3 Hours</label>
+            <label class="sbs"><input type="radio" name="duration" checked required> One Full Day</label>
+            <label class="sbs"><input type="radio" name="duration" required> Two Full Days (free delivery)</label>
+            <label class="sbs"><input type="radio" name="duration" required> Three Full Days (free delivery)</label>
+          </div>
+          <!-- Group Size -->
+          <label class="sbs num-people">Number of People
+            <input type="number" min="1" max="5" value="" name="people" required>
+          </label>
+        </fieldset>
 
-      <fieldset>
-        <legend>Payment Information</legend>
-        <!-- Customer Name -->
-        <label class="top">Full Name* <input type="text" name="name" pattern="[a-zA-Z ]{5,}" title="First Last (capitalized first letters)" required></label>
-        <!-- Customer Email Address -->
-        <label class="top">Email <input type="email" name="email" placeholder="example@email.com" required></label>
-        <!-- Customer Phone Number -->
-        <label class="top">Phone Number* <input type="tel" name="phone" required></label>
-        <!-- Credit Card Number -->
-        <label class="top">Card Number* <input type="number" name="credit-card" required></label>
-      </fieldset>
+        <fieldset>
+          <legend>Payment Information</legend>
+          <!-- Customer Name -->
+          <label class="top">Full Name* <input type="text" name="name" pattern="[a-zA-Z ]{5,}" title="First Last (capitalized first letters)" required></label>
+          <!-- Customer Email Address -->
+          <label class="top">Email <input type="email" name="email" placeholder="example@email.com" required></label>
+          <!-- Customer Phone Number -->
+          <label class="top">Phone Number* <input type="tel" name="phone" required></label>
+          <!-- Credit Card Number -->
+          <label class="top">Card Number* <input type="number" name="credit-card" required></label>
+        </fieldset>
+      </div>
+
       <fieldset>
         <legend>Additional Info</legend>
         <!-- Country -->
