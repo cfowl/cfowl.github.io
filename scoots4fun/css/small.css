@@ -12,7 +12,7 @@
     background-color: #040F16;
     color: #FFB938;
     padding: .75em;
-    border-bottom: 5px groove #3481ED;
+    border-bottom: 3px solid #3481ED;
 }
 
 img {
@@ -40,7 +40,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     justify-items: center;
-    border-bottom: 5px ridge #3481ED;
+    border-bottom: 3px solid #3481ED;
 }
 
 #logo {
@@ -115,7 +115,7 @@ nav a {
 }
 
 #call2action {
-    border: 5px ridge #3481ED;
+    border: 3px solid #3481ED;
     padding: 1em;
     background-color: #FFB938;
     color: #040F16;
@@ -128,9 +128,10 @@ nav a {
 }
 
 #call2action:hover {
-    border: 5px ridge #AA87F5;
+    border: 3px solid #AA87F5;
     background-color: #040F16;
     color: #FFB938;
+    box-shadow: 0 0 10px 5px #AA87F599
 }
 
 .rental-summary {
@@ -141,7 +142,6 @@ nav a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: stretch;
-    border: 5px ridge #040F16;
 }
 
 .rental-summary > div:nth-of-type(1), .rental-summary > div:nth-of-type(2) {
@@ -207,7 +207,6 @@ nav a {
 }
 
 .weather div, .forecast div {
-    border: 5px solid #040F16;
     background-color: #AA87F599;
 }
 
@@ -220,7 +219,6 @@ nav a {
 }
 
 .contact div {
-    border: 5px solid #040F16;
     background-color: #3481ED99;
     color: #040F16;
     font-weight: bold;
@@ -244,6 +242,23 @@ footer a {
 
 footer a:hover {
     color: white;
+}
+
+.rental-summary > div,
+.weather div,
+.forecast div,
+.contact div,
+.rental-details,
+.info-services ul,
+form fieldset,
+input.submit,
+.attractions-info,
+.history-info,
+.contact-map,
+form label.top input,
+form label.top select,
+form textarea {
+    border: 1px solid #040F16;
 }
 
 /* ------------------------------- RENTALS PAGE CSS ------------------------------- */
@@ -270,14 +285,12 @@ tr > td:first-child {
 }
 
 #rentals-table, th, tr, td {
-    border: 5px ridge #3481ED;
+    border: 2px solid #040F16;
     border-collapse: collapse;
     padding: .5em;
 }
 
-/* hides last two columns of table for small view */
 .rental-details {
-    border: 5px ridge #040F16;
     margin-top: 1.5em;
     background-color: #F5CF8799;
 }
@@ -322,7 +335,6 @@ tr > td:first-child {
     display: table;
     margin: 0 auto;
     padding: 1em;
-    border: 5px ridge #040F16;
     background-color: #AA87F599;
     font-weight: bold;
     max-width: 96%;
@@ -347,17 +359,17 @@ form {
 
 form fieldset {
     margin: 0 0 24px;
-    border: 5px ridge #040F16;
+    border: 2px solid #040F16;
     border-radius: 7px;
     padding: .5em .4em .75em .4em;
 }
 
 form fieldset:hover {
-    border: 5px ridge #040F1699;
+    border: 2px solid #040F1699;
 }
 
 form legend {
-    color: #3481ED;
+    color: #040F16;
     font-weight: bold;
     font-size: 1.15em;
     margin: 0 1em;
@@ -397,17 +409,15 @@ input[type="radio"] {
 
 form label.top input, form label.top select, form textarea {
     font-size: 1em;
-    border: solid 1px #50514f;
     border-radius: 4px;
     padding: .75em;
-    color: #50514f;
+    color: #040F16;
     width: 100%;
     max-width: 20em;
     background-color: rgba(0,0,0,.05);
 }
 
 input.submit {
-    border: none;
     background-color: #AA87F599;
     color: #040F16;
     font-size: 1.25em;
@@ -418,7 +428,6 @@ input.submit {
     width: 80%;
     max-width: 20em;
     box-shadow: 0 0 10px 1px #040F16;
-    border: 5px ridge #040F16;
 }
 
 form input.submit:hover {
@@ -427,12 +436,12 @@ form input.submit:hover {
 }
 
 form label.top input:required, form label.sbs input:required, form label.top select:required {
-    border-left: 5px ridge #FFB938;
+    border-left: 5px solid #FFB938;
     overflow: hidden;
 }
 
 form label.top input:required:valid, form label.sbs input:required:valid, form label.top select:required:valid {
-    border-left: 5px ridge #3481ED;
+    border-left: 5px solid #3481ED;
     overflow: hidden;
 }
 
@@ -451,7 +460,6 @@ p.thanks {
 }
 
 .attractions-info, .history-info {
-    border: 5px ridge #040F16;
     background-color: #F5CF8799;
     padding: 1em;
     font-weight: bold;
@@ -500,7 +508,6 @@ h2.contact-map-title {
 .contact-map {
     display: block;
     padding: 1em 1em .75em;
-    border: 5px solid #040F16;
     background-color: #3481ED99;
     min-height: 400px;
 }
