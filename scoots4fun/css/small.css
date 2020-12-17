@@ -2,6 +2,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#attributions h2 {
+    text-align: left;
+}
+
 /* ------------------------------- HOME PAGE & COMMON STYLING CSS ------------------------------- */
 .clearfix::after {
     content: "";
